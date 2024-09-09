@@ -1,26 +1,1058 @@
 ---
-title: "in"
-format: html
+title: "Manejo Integrado de las Arbovirosis en México"
+format: 
+  html:
+      self-contained: true
+      theme: flatly
+      code-fold: true
+      toc: true
+      number-sections: true
+title-block-banner: true
 editor: visual
+#bibliography: references.bib
+execute:
+  freeze: auto
+  warning: false
+  message: false
+  echo: false
 ---
 
-## Quarto
+## Introduction
 
-Quarto enables you to weave together content and executable code into a finished document. To learn more about Quarto see <https://quarto.org>.
+Las arbovirosis transmitidas por **Aedes aegypti** como dengue, chikungunya y zika, constituyen problemas de salud pública principalmente en regiones tropicales y subtropicales (WHO, 2017). El dengue es la arbovirosis con la mayor carga de la enfermedad y con una distribución geográfica en continua expansión. En las últimas dos décadas, la transmisión de los virus del dengue y la notificación de los casos a nivel mundial se incrementó de 0.5 a 5.2 millones de casos del 2000 al 2019 en 129 países (WHO, 2023). La Organización Panamericana de la Salud (OPS, 2024) reportó un total de 4.6 millones de casos probables, 2 millones de casos confirmados, 7954 casos graves y 2423 muertes en las Américas durante el 2023. Para 2024, se habían reportado 8.2 millones de casos probables, 3.8 millones de casos confirmados, 8034 casos graves y 3650 muertes (OPS, 2024).
 
-## Running Code
+En México, la revisión de la literatura histórica señalan que los primeros brotes de dengue ocurrieron antes del siglo XIX (Ehrenkranz et al 1971, Gubler 2014, Brady & Hay, 2020), y el primer caso de dengue confirmado por laboratorio ocurrió en 1971 (Clarke et al 2024). Desde entonces se han reportado brotes epidémicos cada 3 a 5 años (Dick et al 2012, Johansson et al 2016), reinando principalmente los serotipos 1 y 2 (Vasquez-Pichardo et al 2011, Gómez-Dantes et al 2014, Gutiérrez et al 2023). En 2023, el serotipo dengue 3 se reintrodujo, estableció y dispersó en todos los estados, excepto Tlaxcala (SSA, 2023; Arellano-Rivera et al 2024). Adicionalmente, se observó en los brotes epidemicos del 2023 y 2024, la transmisión autóctona en grandes centros metropolitanos (Ciudad de México, Puebla, y Aguascalientes) con climas templados a alturas arriba de los 2000 msnm distribuidos en el eje neovolcanico de la meseta del valle central de México entre la Sierra Madre Occidental, la Sierra Madre Oriental y la Sierra Madre del Sur.
 
-When you click the **Render** button a document will be generated that includes both content and the output of embedded code. You can embed code like this:
+La transmisión de los virus del dengue en el país forman un mosaico de transmisión espacial y temporal heterogénea y compleja que incluye localidades con incipiente invasión, transmisión ocasional (no endémicas), endémica, epidémica, e hiperendémica. La reciente expanción geográfica de *Ae. aegypti* y la transmisión del dengue en México, aunado al amplio espectro de la transmisión en las localidades, pone de manifiesto la urgente necesidad de implementar un **Manejo Integrado de las Arbovirosis** en Mexico que considere la heterogeneidad espacio-temporal de los elementos de la triada epidemiologica y los factores más importantes que modulan la transmisión.
 
-```{r}
-1 + 1
-```
+## Manejo Integrado de Aedes y las Arbovirosis
 
-You can add options to executable code like this
+EL **M**anejo **I**ntegrado de los **V**ectores (**MIV**) incluye un portafolio de intervenciones combinadas y sincronizadas en tiempo y espacio basado en el conocimiento de la biología de los vectores (horarios de actividad, sitios de reposo, productividad de criaderos, dinamica poblacional, etc), ciclos de transmisión, inmunidad de las poblaciones, cepas del agente causal, las condiciones sociodemográficas y ecológicas, susceptibilidad a los insecticidas y considerando la heterogeneidad de la transmisión y los factores que la modulan. El fin último del **Manejo Integrado de los Vectores** es reducir, contener, interrumpir o eliminar la transmisión de las ETVs y por medio de la prevención, reducción y/ó eliminación de las condiciones que favorecen las abundancias de los vectores, y el contacto humano-artrópodo.
 
-```{r}
+En los documentos títulados la **Respuesta Global para el Control del Vector** (WHO, 2017) y de la **Iniciativa Mundial de Arbovirus** (WHO, 2024) de la Organización Mundial de la Salud se proporcionan las guías del **Manejo Integrado de los Vectores** (WHO, 2012) cuya meta es lograr el **control vectorial eficaz, sostenible y adaptado localmente** a través de fortalecer la acción y colaboración inter e intrasectorial, empoderar y movilizar a las comunidades, mejorar la vigilancia entomológica y la evaluación de las intervenciones, y el escalamiento e integración de herramientas y enfoques inovadores. Basados en estas directrices, organizaciones y investigadores han generado documentos ilustrativos que intentan operacionalizar el Manejo Integrado de las arbovirosis describiendo escenarios epidemiológicos y operativos (Roiz et al 2018; PAHO et al 2019; PAHO 2020; WHO, 2020; WHO,2023; MHP, 2020).
+
+El programa Nacional de Prevención y Control de las enfermedades Transmitidas por Vector (ETVs) e Intoxicación por Veneno de Artrópodos (IVA) del CENAPRECE de la Secretaría de Salud Federal, basados en el Manejo Integrado de Vectores (MIV) de la Organización Mundial de la Salud (WHO, 2017) definen e implementan el Manejo Integrado de las Arbovirosis (MIA) en México identificando los escenarios operativos a través del análisis espacial de los binomios transmisión-abundancia del vector persistente (datos epidemiológicos y entomológicos históricos) y transmisión activa-abundancia reciente (datos epidemiológicos y entomológicos del año en curso) con la finalidad implementar acciones de prevención y control proactivas basadas en el Manejo Integrado de Aedes.
+
+El desarrollo de un modelo estratégico de focalización basado en el manejo integrado de las arbovirosis en las áreas urbanas endémicas de México y su implementación, constituye un elemento clave para redirigir los límitados recursos materiales, humanos y económicos en las áreas de los grandes centros urbanos identificados como escenarios epidemiológicos de alto riesgo donde la transmisión persistente se concentra y donde las cadenas de transmisión son activas. Teóricamente, de acuerdo a la Power Law 80:20 conocida comúnmente en el ambito académico como principio o ley de Pareto, sostiene que el 80% de los problemas tiene su origen en el 20% de las causas. Adaptado en el contexto de Manejo Integrado de las Arbovirosis, se expresaria con la siguiente afirmación **"80% de la transmisión se concentra en el 20% de su área"**, en consecuencia la focalización del manejo integrado de las acciones practivas y oportunas en el 20% del área, permitiría obtener reducciones del 80% de la carga de la enfermedad.
+
+## Desarrollo
+
+En la **Iniciativa Global de las Arbovirosis** de la Organización Mundial de la Salud (OMS, 2024), en el primer pilar (Monitoreo de riesgo y anticipación) una de las acciones prioritarias es mapear los riesgos y determinar las áreas vulnerables a la transmisión, aparición o reemergencia de los virus transmitidos por los mosquitos Aedes (WHO, 2024). En línea con esta iniciativa, en la definición estratégica del **Manejo Integrado de las Arbovirosis en México**, el análisis espacial de las bases de datos históricas y recientes generados por los sistemas de vigilancia epidemiológica y vigilancia entomológica, es de vital importancia para definir los escenarios operativos o epidemiológicos en las áreas urbanas endémicas. El manejo integrado de las arbovirosis se implementa en tres etapas. En la primera etapa se definen los escenarios operativos basados en 1) la transmisión persistente identificadas como hotspots usando bases de datos epidemiológicos del 2008 al 2023, y 2) los hotspots de la abundancias persistentes del vector empleando bases de datos entomológicos del 2014 al 2019. En la segunda etapa se definen los escenarios operativos basados en 1) la transmisión activa determinada con las cadenas de transmisión o mapas de calor utilizando las bases de datos epidemiológicos del año en curso, y 2) los hotspots de las abundancias recientes del vector analizando bases de datos entomológicos del año en curso. Finalmente, en la tercera etapa se definen las acciones de prevención y control de manera temporal y espacial para cada escenario operativo o epidemiológico (@fig-flow_chart).
+
+![Flujograma del análisis espacial del las arbovirosis en México e identificación de los escenarios operativos.](flowchart_analisis_espacial.png){#fig-flow_chart}
+
+### Etapa I. Escenarios Operativos basados en la transmisión y abundancia persistente.
+
+La idea central es estratificar espacialmente las áreas urbanas endémicas de dengue en México a través de la identificación de los hotspots de la transmisión persistente (áreas con mayor concentración de casos) (Dzul-Manzanilla et al 2021) y los hotspots del vector (áreas con mayor abundancia persistente de huevos) con las bases de datos históricas (Dzu-Manzanilla et al 2019), asumiendo que ambos hotspots (casos y vector) tienen concordancia espacial. El sobrelape espacial permite definir los siguientes escenarios operativos o epidemiológicos (@tbl-escenarios_def).
+
+| Escenario                                                | Definición                                                                                                                                                                                                                                                                                        |
+|------------------------------------|------------------------------------|
+| [**Riesgo Muy Alto de Transmisión**]{style="color:red;"} | Áreas definidas como aquellas unidades espaciales (AGEBS) identificadas como hotspots de transmisión persistente que presentan sobrelape espacial con los hotspots de la abundancia de huevos de *Ae. aegypti*. En @fig-trans_pers las áreas con riesgo muy alto son representadas en color rojo. |
+| [**Riesgo Alto de Transmisión**]{style="color:orange;"}  | Áreas identificadas como hotspots de transmisión persistente de dengue. En @fig-trans_pers las áreas con riesgo alto son representadas en color naranja.                                                                                                                                          |
+| [**Riesgo Medio de Transmisión**]{style="color:gold;"}   | Áreas identificadas como hotspots de transmisión de la abundancia de Huevos de *Ae. aegypti*. En @fig-trans_pers las áreas con riesgo medio son representadas en color amarillo.                                                                                                                  |
+| [**Riesgo Bajo de Transmisión**]{style="color:green;"}   | Áreas sin hotspots de transmisión de dengue y áreas sin hotspots de la abundancias del vector. En @fig-trans_pers las áreas con riesgo bajo son representadas en color verde.                                                                                                                     |
+
+: Definición de Escenarios Epidemiológicos {#tbl-escenarios_def .striped .hover tbl-colwidths="\[20,80\]"}
+
+ 
+
+En la @fig-trans_pers se ilustran los escenarios operativos o epidemiológicos basados en los hotspots de la transmisión persistente y los hotspots de la abundancia persistente del vector en Mérida, Yucatán.
+
+![Escenarios operativos basados en la transmisión persistente & la abundancia persistente del vector en Mérida, Yucatán. El mapa inferior representa los hotspots de la transmisión persistente, el mapa intermedio representa los hotspots de la abundancia persistente del vector y el mapa superior representan los escenarios operativos](transmision_persistente.jpg){#fig-trans_pers}
+
+#### Hotspots de la Transmisión Persistente.
+
+##### Mérida, Yucatán.
+
+
+
+```{r hotspots_dengue_merida, warning=FALSE, message=FALSE}
 #| echo: false
-2 * 2
+#| output: true
+mapview::mapviewOptions(default = TRUE,
+                        basemaps.color.shuffle = FALSE)
+# Step 1. extract the locality ####
+loc <- rgeomex::extract_locality(cve_edo = "31", 
+                                 locality = "Merida")
+
+# Step 2. Extract the hotspots ####
+hotspots <- denmex::den_hotspots[loc, ]
+mapview::mapview(hotspots,
+                 zcol = "intensity_gi",
+                 layer.name = "Intensidad",
+                 label = FALSE,
+                 color = "white",
+                 lwd = 0.5, 
+                 col.regions =  rcartocolor::carto_pal(n = max(hotspots$intensity_gi), 
+                                                       name = "OrYel"),
+                 static_map = FALSE)
+
 ```
 
-The `echo: false` option disables the printing of code (only output is displayed).
+.
+
+##### Guadalajara, Jalisco.
+
+```{r hotspots_dengue_guadalajara, warning=FALSE, message=FALSE}
+#| echo: false
+#| output: true
+mapview::mapviewOptions(default = TRUE,
+                        basemaps.color.shuffle = FALSE)
+# Step 1. extract the locality ####
+loc <- rgeomex::extract_locality(cve_edo = "14", 
+                                 locality = c("Guadalajara",
+                          "Tlaquepaque",
+                         "Zapopan", 
+                         "Tonalá"))
+
+# Step 2. Extract the hotspots ####
+hotspots <- denmex::den_hotspots[loc, ]
+mapview::mapview(hotspots,
+                 zcol = "intensity_gi",
+                 layer.name = "Intensidad",
+                 label = FALSE,
+                 color = "white",
+                 lwd = 0.5, 
+                 col.regions =  rcartocolor::carto_pal(n = max(hotspots$intensity_gi), 
+                                                       name = "OrYel"),
+                 static_map = FALSE)
+
+```
+
+ 
+
+##### Monterrey, Nuevo León.
+
+```{r hotspots_dengue_monterrey, warning=FALSE, message=FALSE}
+#| echo: false
+#| output: true
+mapview::mapviewOptions(default = TRUE,
+                        basemaps.color.shuffle = FALSE)
+# Step 1. extract the locality ####
+loc <- rgeomex::extract_locality(cve_edo = "19", 
+                                 locality = c("Ciudad General Escobedo", "Ciudad Apodaca",
+                                              "Guadalupe", "Monterrey", "Ciudad Santa Catarina",
+                                              "San Pedro Garza García", "Ciudad Benito Juárez",
+                                              "San Nicolás de los Garza", "Benito Juárez"))
+
+# Step 2. Extract the hotspots ####
+hotspots <- denmex::den_hotspots[loc, ]
+mapview::mapview(hotspots,
+                 zcol = "intensity_gi",
+                 layer.name = "Intensidad",
+                 label = FALSE,
+                 color = "white",
+                 lwd = 0.5, 
+                 col.regions =  rcartocolor::carto_pal(n = max(hotspots$intensity_gi), 
+                                                       name = "OrYel"),
+                 static_map = FALSE)
+
+```
+
+ 
+
+##### Acapulco, Guerrero.
+
+```{r hotspots_dengue_acapulco, warning=FALSE, message=FALSE}
+#| echo: false
+#| output: true
+mapview::mapviewOptions(default = TRUE,
+                        basemaps.color.shuffle = FALSE)
+# Step 1. extract the locality ####
+loc <- rgeomex::extract_locality(cve_edo = "12", 
+                                 locality = "Acapulco de Juarez")
+
+# Step 2. Extract the hotspots ####
+hotspots <- denmex::den_hotspots[loc, ]
+mapview::mapview(hotspots,
+                 zcol = "intensity_gi",
+                 layer.name = "Intensidad",
+                 label = FALSE,
+                 color = "white",
+                 lwd = 0.5, 
+                 col.regions =  rcartocolor::carto_pal(n = max(hotspots$intensity_gi), 
+                                                       name = "OrYel"))
+
+```
+
+#### Hotspots de la Abundancia Persistente del Vector.
+
+ 
+
+##### Mérida, Yucatán.
+
+```{r vector_hotspots_merida}
+deneggs::map_eggs_hotspots(betas = denmex::eggs_betas_31_yucatan ,
+                           locality = "Mérida",
+                           cve_edo = "31",
+                           palette = rcartocolor::carto_pal,
+                           name = "SunsetDark",
+                           static_map = FALSE)
+```
+
+ 
+
+##### Guadalajara, Jalisco.
+
+```{r vector_hotspots_guadalajara}
+deneggs::map_eggs_hotspots(betas = denmex::eggs_betas_14_jalisco,
+                           locality = c("Guadalajara",
+                          "Tlaquepaque",
+                         "Zapopan", 
+                         "Tonalá"),
+                           cve_edo = "14",
+                           palette = rcartocolor::carto_pal,
+                           name = "SunsetDark",
+                         static_map = FALSE)
+```
+
+ 
+
+##### Monterrey, Nuevo León.
+
+```{r vector_hotspots_monterrey}
+load("~/Library/CloudStorage/OneDrive-Personal/proyects/hotspots_eggs/8.RData/19_nuevo_leon/betas/19_nuevo_leon_zinb1_betas.RData")
+deneggs::map_eggs_hotspots(betas = betas_19_nuevo_leon,
+                           locality = c("Ciudad General Escobedo", "Ciudad Apodaca",
+                                              "Guadalupe", "Monterrey", "Ciudad Santa Catarina",
+                                              "San Pedro Garza García", "Ciudad Benito Juárez",
+                                              "San Nicolás de los Garza", "Benito Juárez"),
+                           cve_edo = "19",
+                           palette = rcartocolor::carto_pal,
+                           name = "SunsetDark",
+                           static_map = FALSE)
+```
+
+
+
+##### Acapulco, Guerrero.
+
+```{r vector_hotspots_acapulco}
+deneggs::map_eggs_hotspots(betas = denmex::eggs_betas_12_guerrero,
+                           locality = "Acapulco de Juarez",
+                           cve_edo = "12",
+                           palette = rcartocolor::carto_pal,
+                           name = "SunsetDark",
+                           static_map = FALSE)
+```
+
+
+
+#### Escenarios Epidemiológicos u Operativos de la Transmisión y Abundancia Persistente.
+
+
+
+##### [**Mérida, Yucatán**]{style="color:#990000"}
+
+```{r risk_ageb_merida}
+# Step 1. calculate the risk ####
+risk <- denhotspots::risk_ageb(betas = denmex::eggs_betas_31_yucatan,
+                               hotspots = denmex::den_hotspots,
+                               intensity_perc = 25,
+                               locality = "Mérida",
+                               cve_edo = "31")
+
+# Step 2. map ####
+denhotspots::map_risk(risk = risk,
+                      staticmap = FALSE)
+
+```
+
+
+
+##### [**Guadalajara, Jalisco**]{style="color:#990000"}
+
+```{r risk_ageb_guadalajara}
+# Step 1. calculate the risk ####
+risk <- denhotspots::risk_ageb(betas = denmex::eggs_betas_14_jalisco,
+                               hotspots = denmex::den_hotspots,
+                               intensity_perc = 25,
+                               locality = c("Guadalajara",
+                          "Tlaquepaque",
+                         "Zapopan", 
+                         "Tonalá"),
+                               cve_edo = "14")
+
+# Step 2. map ####
+denhotspots::map_risk(risk = risk,
+                      staticmap = FALSE)
+
+```
+
+ 
+
+##### [**Monterrey, Nuevo León**]{style="color:#990000"}
+
+```{r risk_ageb_monterrey}
+# Step 1. calculate the risk ####
+load("~/Library/CloudStorage/OneDrive-Personal/proyects/hotspots_eggs/8.RData/19_nuevo_leon/betas/19_nuevo_leon_zinb1_betas.RData")
+risk <- denhotspots::risk_ageb(betas = betas_19_nuevo_leon,
+                               hotspots = denmex::den_hotspots,
+                               intensity_perc = 25,
+                               locality = c("Ciudad General Escobedo", "Ciudad Apodaca",
+                                              "Guadalupe", "Monterrey", "Ciudad Santa Catarina",
+                                              "San Pedro Garza García", "Ciudad Benito Juárez",
+                                              "San Nicolás de los Garza", "Benito Juárez"),
+                               cve_edo = "19")
+
+# Step 2. map ####
+denhotspots::map_risk(risk = risk,
+                      staticmap = FALSE)
+
+```
+
+ 
+
+##### [**Acapulco, Guerrero**]{style="color:#990000"}
+
+```{r risk_ageb_acapulco}
+# Step 1. calculate the risk ####
+risk <- denhotspots::risk_ageb(betas = denmex::eggs_betas_12_guerrero,
+                               hotspots = denmex::den_hotspots,
+                               intensity_perc = 25,
+                               locality = "Acapulco de Juarez",
+                               cve_edo = "12")
+
+# Step 2. map ####
+denhotspots::map_risk(risk = risk,
+                      staticmap = FALSE)
+
+```
+
+### Dashboards de los escenarios operativos.
+
+Actualmente, El Programa Nacional de Prevención y Control de las Enfermedades Transmitidas por Vectores (ETVs) e Intoxicación por Veneno de Artrópodos (IVA) del Centro Nacional Prevención y Control de Enfermedades de la Secretaría de Salud Federal, ha identificado los escenarios epidemiológicos operativos en las localidades endémicas y prioritarias de todos los Estados de la República Mexicana, excepto (Chihuahua, Queretaro & Tlaxcala) y se ha desarrollado 21 dashboards estatales de acuerdo a la sugerencia de la **Iniciativa Global de las Arbovirosis** (WHO 2024) para la visualización de los escenarios de riesgo con la finalidad de facilitar la toma de desiciones por el personal directivo de los programas de prevención y control de las arbovirosis en los estados (@tbl-escenarios, @fig-dengue_risk).
+
+
+
+```{r dengue_risk_map}
+#| label: fig-dengue_risk
+#| fig-cap: "Mapa de Avance de la identificación de los escenarios operativo en México"
+# Step 1. load the AGEE ####
+mex <- rgeomex::AGEE_inegi19_mx
+
+# Step 3. make the tible link ####
+link <- tibble::tibble(CVE_ENT = c("01","02", "03", "04", "05",
+                                   
+                                   "06", "07", "10",
+                                   
+                                   "11", "12", "13", "14", "15",
+                                   
+                                   "16", "17", "18", "19", "20",
+                                   
+                                   "21", "23","24", "25",
+                                   
+                                   "26", "27", "28", "30",
+                                   
+                                   "31", "32"),
+                       link = c( # 01, 02, 03, 04, 05
+                                "https://dashing-manatee-5aedb8.netlify.app/#hotspots-de-vector",
+                                "https://dazzling-taffy-ac0fd2.netlify.app",
+                                "https://fascinating-youtiao-a1f6f7.netlify.app",
+                                "https://phenomenal-hotteok-02e188.netlify.app",
+                                "https://strong-kelpie-ecc3ea.netlify.app",
+                                
+                                # 06, 07, 08, 09, 10
+                                "https://silver-moxie-30857b.netlify.app",
+                                "https://adorable-tiramisu-303de1.netlify.app",
+                                # 08
+                                # 09
+                                "https://preeminent-nougat-6307ee.netlify.app",
+                                
+                                # 11, 12, 13, 14, 15
+                                "https://sparkly-concha-17d36d.netlify.app",
+                                "https://astounding-squirrel-94dd18.netlify.app",
+                                "https://incredible-arithmetic-3dc5ed.netlify.app",
+                                "https://heartfelt-fudge-936865.netlify.app",
+                                "https://inquisitive-tartufo-8d5181.netlify.app",
+                                
+                                # 16, 17, 18, 19, 20
+                                "https://fabulous-mermaid-31ea6a.netlify.app",
+                                "https://glistening-griffin-b8023f.netlify.app",
+                                "https://idyllic-granita-6918af.netlify.app",
+                                "https://starlit-lolly-ad7d14.netlify.app",
+                                "https://merry-figolla-08f5bf.netlify.app",
+                                
+                                # 21, 22, 23, 24, 25
+                                "https://snazzy-figolla-e17977.netlify.app", # puebla
+                                # 22 queteraro
+                                "https://helpful-pegasus-ba8bb9.netlify.app", # cancun
+                                "https://wonderful-belekoy-db9c08.netlify.app",
+                                "https://cosmic-dusk-10e889.netlify.app",
+                                
+                                # 26, 27, 28, 29 30
+                                "https://soft-donut-e34403.netlify.app",
+                                "https://capable-torrone-6eae7f.netlify.app",
+                                "https://zingy-tarsier-e2570c.netlify.app",
+                                # 29 tlaxcala
+                                "https://zippy-bunny-bdd8c7.netlify.app",
+                                
+                                # 31, 32
+                                "https://keen-dango-d1cd7e.netlify.app",
+                                "https://mellifluous-banoffee-e28771.netlify.app"))
+
+# Step 3. left joint ####
+mex_link <- dplyr::left_join(x = link,
+                             y = mex,
+                             by = "CVE_ENT") |>
+    dplyr::mutate(Estado = paste0(": <a href=", 
+                                  link,">", 
+                                  NOMGEO, "</a>")) |>
+    as.data.frame() |>
+    sf::st_set_geometry(value = "geometry") 
+
+mex_link |>
+    mapview::mapview(popup = "Estado",
+                     legend = FALSE,
+                     col.regions = "#E01A59")
+```
+
+
+
+| Estado                                                                   | Hotspots del Dengue | Hotspots del Vector | Escenarios |
+|------------------|:----------------:|:----------------:|:----------------:|
+| [01 Aguascalientes](https://dashing-manatee-5aedb8.netlify.app)          |          0          |          1          |     0      |
+| [02 Baja California](https://dazzling-taffy-ac0fd2.netlify.app)          |          1          |          2          |     1      |
+| [03 Baja California Sur](https://fascinating-youtiao-a1f6f7.netlify.app) |          3          |          3          |     3      |
+| [04 Campeche](https://phenomenal-hotteok-02e188.netlify.app)             |          3          |          3          |     3      |
+| [05 Coahuila](https://strong-kelpie-ecc3ea.netlify.app)                  |          2          |          5          |     2      |
+| [06 Colima](https://silver-moxie-30857b.netlify.app)                     |          4          |          4          |     3      |
+| [07 Chiapas](https://adorable-tiramisu-303de1.netlify.app)               |          9          |          2          |     2      |
+| 08 Chihuahua                                                             |          1          |          0          |     0      |
+| 09 Ciudad de México                                                      |          1          |          1          |     0      |
+| [10 Durango](https://preeminent-nougat-6307ee.netlify.app)               |          1          |          3          |     1      |
+| [11 Guanajuato](https://sparkly-concha-17d36d.netlify.app)               |          1          |          2          |     0      |
+| [12 Guerrero](https://astounding-squirrel-94dd18.netlify.app)            |          4          |          4          |     4      |
+| [13 Hidalgo](https://incredible-arithmetic-3dc5ed.netlify.app)           |          0          |          5          |     0      |
+| [14 Jalisco](https://heartfelt-fudge-936865.netlify.app)                 |          5          |          6          |     5      |
+| [15 Estado de México](https://inquisitive-tartufo-8d5181.netlify.app)    |          0          |          2          |     0      |
+| [16 Michoacán](https://fabulous-mermaid-31ea6a.netlify.app)              |          4          |          8          |     4      |
+| [17 Morelos](https://glistening-griffin-b8023f.netlify.app)              |          2          |          3          |     2      |
+| [18 Nayarit](https://idyllic-granita-6918af.netlify.app)                 |          2          |          1          |     1      |
+| [19 Nuevo León](https://starlit-lolly-ad7d14.netlify.app)                |          6          |          4          |     3      |
+| [20 Oaxaca](https://merry-figolla-08f5bf.netlify.app)                    |          7          |         14          |     7      |
+| [21 Puebla](https://snazzy-figolla-e17977.netlify.app/#)                 |          3          |          6          |     3      |
+| 22 Queretaro                                                             |          0          |          0          |     0      |
+| [23 Quintana Roo](https://helpful-pegasus-ba8bb9.netlify.app)            |          5          |          4          |     4      |
+| [24 San Luis Potosí](https://wonderful-belekoy-db9c08.netlify.app)       |          2          |          3          |     1      |
+| [25 Sinaloa](https://cosmic-dusk-10e889.netlify.app)                     |          5          |          5          |     5      |
+| [26 Sonora](https://soft-donut-e34403.netlify.app)                       |          4          |          4          |     4      |
+| [27 Tabasco](https://capable-torrone-6eae7f.netlify.app)                 |          5          |         13          |     5      |
+| [28 Tamaulipas](https://zingy-tarsier-e2570c.netlify.app)                |          7          |          6          |     6      |
+| 29 Tlaxcala                                                              |          0          |          0          |     0      |
+| [30 Veracruz](https://zippy-bunny-bdd8c7.netlify.app)                    |         13          |         11          |     13     |
+| [31 Yucatán](https://keen-dango-d1cd7e.netlify.app)                      |          4          |          7          |     4      |
+| [32 Zacatecas](https://mellifluous-banoffee-e28771.netlify.app)          |          1          |          6          |     1      |
+
+: Estados con Escenarios Epidemiológicos {#tbl-escenarios .striped .hover .center}
+
+### Fase II. Escenarios operativos basados en la transmisión activa y abundancia reciente.
+
+La meta central es proporcionar un marco analítico que identifique en las áreas urbanas endémicas de dengue en México, las áreas de alto Riesgo de transmisión definidas como aquellas áreas con transmisión activa identificadas con las cadenas de transmisión o los mapas de calor que presentan sobrelape espacial con los hotspots de la abundancia reciente de huevos de *Ae. aegypti*. Estas áreas son susceptibles para la implementación de acciones de control vectorial.
+
+![Ilustración de los Escenarios operativos basados en la transmisión activa & la abundancia reciente del vector en Mérida, Yucatán. El mapa inferior representa los hotspots de la abundancia reciente del vector, el mapa intermedio representan las cadenas de transmisión y el mapa superior representan los escenarios operativos.](transmision_activa.jpg){#fig-trans_act}
+
+En la figura @fig-trans_act se ilustran los escenarios operativos basado en las cadenas de transmisión y los hotspots de la abundancia reciente del vector en Mérida, Yucatán. A diferencia de los escenarios operativos basados en la transmisión persistente en los cuales los análisis espaciales se actualizan anualmente, en los escenarios operativos basasos en las cadenas de transmisión activa (mapas de calor) los análisis se realizan en tiempo real de manera semanal.
+
+#### Identificación de la Transmisión Activa (2024).
+
+##### Valles Centrales, Oaxaca.
+
+```{r heatmap_valles_centrales}
+load("/Users/fdzul/Library/CloudStorage/OneDrive-Personal/proyects/geocoding_mex/2024/8.RData/denmex_2024.RData")
+a <- densnv::mp_heatmap(locality = c("Oaxaca de Juarez", 
+                                "Santa María Atzompa",
+                                "San Jacinto Amilpas",
+                                "Santa Lucia del Camino",
+                                "San Antonio de la Cal",
+                                "Santa Cruz Xoxocotlán",
+                                "San Agustin de las Juntas"),
+                   cve_edo = "20",
+                   geocoded_datasets = z,
+                   zoom = 13,
+                   status_caso = c(1, 2),
+                   week = seq(from = lubridate::epiweek(Sys.Date())-4, 
+                              to = lubridate::epiweek(Sys.Date()), 
+                              by = 1),
+                   alpha = 0.2,
+                   static = TRUE,
+                   map_type = "satellite") +
+    ggplot2::labs(subtitle = "Ultimo Mes")
+
+
+b <- densnv::mp_heatmap(locality = c("Oaxaca de Juarez", 
+                                "Santa María Atzompa",
+                                "San Jacinto Amilpas",
+                                "Santa Lucia del Camino",
+                                "San Antonio de la Cal",
+                                "Santa Cruz Xoxocotlán",
+                                "San Agustin de las Juntas"),
+                   cve_edo = "20",
+                   geocoded_datasets = z,
+                   zoom = 13,
+                   status_caso = c(1, 2),
+                   week = seq(from = lubridate::epiweek(Sys.Date())-2, 
+                              to = lubridate::epiweek(Sys.Date()), 
+                              by = 1),
+                   alpha = 0.2,
+                   static = TRUE,
+                   map_type = "satellite") +
+    ggplot2::labs(subtitle = "Últimas dos Semanas")
+
+library(patchwork)
+a | b
+```
+
+##### Villahermosa, Tabasco.
+
+```{r heatmap_valles_villa}
+a <- densnv::mp_heatmap(locality = "Villahermosa",
+                   cve_edo = "27",
+                   geocoded_datasets = z,
+                   zoom = 13,
+                   status_caso = c(1, 2),
+                   week = seq(from = lubridate::epiweek(Sys.Date())-4, 
+                              to = lubridate::epiweek(Sys.Date()), 
+                              by = 1),
+                   alpha = 0.2,
+                   static = TRUE,
+                   map_type = "satellite") +
+    ggplot2::labs(subtitle ="Ultimo Mes")
+
+
+b <- densnv::mp_heatmap(locality = "Villahermosa",
+                   cve_edo = "27",
+                   geocoded_datasets = z,
+                   zoom = 13,
+                   status_caso = c(1, 2),
+                   week = seq(from = lubridate::epiweek(Sys.Date())-2, 
+                              to = lubridate::epiweek(Sys.Date()), 
+                              by = 1),
+                   alpha = 0.2,
+                   static = TRUE,
+                   map_type = "satellite") +
+    ggplot2::labs(subtitle = "Últimas dos Semanas")
+
+library(patchwork)
+a | b
+```
+
+##### Monterrey, Nuevo León.
+
+```{r heatmap_monterrey}
+a <- densnv::mp_heatmap(locality =  c("Ciudad General Escobedo", "Ciudad Apodaca",
+                                              "Guadalupe", "Monterrey", "Ciudad Santa Catarina",
+                                              "San Pedro Garza García", "Ciudad Benito Juárez",
+                                              "San Nicolás de los Garza", "Benito Juárez"),
+                   cve_edo = "19",
+                   geocoded_datasets = z,
+                   zoom = 11,
+                   status_caso = c(1, 2),
+                   week = seq(from = lubridate::epiweek(Sys.Date())-4, 
+                              to = lubridate::epiweek(Sys.Date()), 
+                              by = 1),
+                   alpha = 0.2,
+                   static = TRUE,
+                   map_type = "satellite") +
+    ggplot2::labs(subtitle ="Ultimo Mes")
+
+
+b <- densnv::mp_heatmap(locality =  c("Ciudad General Escobedo", "Ciudad Apodaca",
+                                              "Guadalupe", "Monterrey", "Ciudad Santa Catarina",
+                                              "San Pedro Garza García", "Ciudad Benito Juárez",
+                                              "San Nicolás de los Garza", "Benito Juárez"),
+                   cve_edo = "19",
+                   geocoded_datasets = z,
+                   zoom = 11,
+                   status_caso = c(1, 2),
+                   week = seq(from = lubridate::epiweek(Sys.Date())-2, 
+                              to = lubridate::epiweek(Sys.Date()), 
+                              by = 1),
+                   alpha = 0.2,
+                   static = TRUE,
+                   map_type = "satellite") +
+    ggplot2::labs(subtitle = "Últimas dos Semanas")
+
+library(patchwork)
+a | b
+```
+
+##### Guadalajara Jalisco.
+
+```{r heatmap_guadalajara}
+a <- densnv::mp_heatmap(locality = c("Guadalajara",
+                          "Tlaquepaque",
+                         "Zapopan", 
+                         "Tonalá"),
+                   cve_edo = "14",
+                   geocoded_datasets = z,
+                   zoom = 11,
+                   status_caso = c(1, 2),
+                   week = seq(from = lubridate::epiweek(Sys.Date())-4, 
+                              to = lubridate::epiweek(Sys.Date()), 
+                              by = 1),
+                   alpha = 0.2,
+                   static = TRUE,
+                   map_type = "satellite") +
+    ggplot2::labs(subtitle ="Ultimo Mes")
+
+
+b <- densnv::mp_heatmap(locality = c("Guadalajara",
+                          "Tlaquepaque",
+                         "Zapopan", 
+                         "Tonalá"),
+                   cve_edo = "14",
+                   geocoded_datasets = z,
+                   zoom = 11,
+                   status_caso = c(1, 2),
+                   week = seq(from = lubridate::epiweek(Sys.Date())-2, 
+                              to = lubridate::epiweek(Sys.Date()), 
+                              by = 1),
+                   alpha = 0.2,
+                   static = TRUE,
+                   map_type = "satellite") +
+    ggplot2::labs(subtitle = "Últimas dos Semanas")
+
+library(patchwork)
+a | b
+```
+
+#### Hotspots de la Abundancia del Vector (2024.
+
+##### Valles Centrales, Oaxaca.
+
+```{r hotspots_eggs_valles_2024}
+load("~/Dropbox/posdoctorado_INSP/proyectos/mia_epidemiological_scenarios/8.RData/hotspots_eggs/hotspots_eggs_oaxaca_2024.RData")
+deneggs::map_eggs_hotspots(betas = oaxaca_2024$betas,
+                           locality = "Oaxaca de Juarez",
+                           cve_edo = "20",
+                           palette = rcartocolor::carto_pal,
+                           name = "SunsetDark",
+                           static_map = FALSE)
+```
+
+##### Villahermosa, Tabasco.
+
+```{r hotspots_eggs_villahermosa_2024}
+load("~/Dropbox/posdoctorado_INSP/proyectos/mia_epidemiological_scenarios/8.RData/hotspots_eggs/hotspots_eggs_villahermosa_2024.RData")
+deneggs::map_eggs_hotspots(betas = villahermosa_2024$betas,
+                           locality = "Villahermosa",
+                           cve_edo = "27",
+                           palette = rcartocolor::carto_pal,
+                           name = "SunsetDark",
+                           static_map = FALSE)
+
+```
+
+
+##### Monterrey, Nuevo León.
+
+```{r hotspots_eggs_monterrey_2024}
+load("~/Dropbox/posdoctorado_INSP/proyectos/mia_epidemiological_scenarios/8.RData/hotspots_eggs/hotspots_eggs_monterrey_2024.RData")
+deneggs::map_eggs_hotspots(betas = monterrey_2024$betas,
+                           locality = c("Ciudad General Escobedo", "Ciudad Apodaca",
+                                        "Guadalupe", "Monterrey", "Ciudad Santa Catarina",
+                                        "San Pedro Garza García", "Ciudad Benito Juárez",
+                                        "San Nicolás de los Garza", "Benito Juárez"),
+                           cve_edo = "19",
+                           palette = rcartocolor::carto_pal,
+                           name = "SunsetDark",
+                           static_map = FALSE)
+```
+
+##### Guadalajara, Jalisco.
+
+```{r hotspots_eggs_guadalajara_2024}
+load("~/Dropbox/posdoctorado_INSP/proyectos/mia_epidemiological_scenarios/8.RData/hotspots_eggs/hotspots_eggs_guadalajara_2024.RData")
+deneggs::map_eggs_hotspots(betas = guadalajara_2024$betas,
+                           locality = c("Guadalajara",
+                                        "Tlaquepaque",
+                                        "Zapopan", 
+                                        "Tonalá"),
+                           cve_edo = "14",
+                           palette = rcartocolor::carto_pal,
+                           name = "SunsetDark",
+                           static_map = FALSE)
+```
+
+
+### Fase III. Manejo Integrado de Aedes aegypti.
+
+En las arbovirosis transmitidas por los mosquitos Aedes como el dengue, chikungunya y zika, donde no existen tratamientos y medicamentos antivirales específicos para cortar la transmisión, y vacunas con aprobada eficacia para todos los serotipos y genotipos, la prevención, reducción, contención, control y eliminación de la transmisión de los agentes etiológicos es realizada a travéz del **Manejo Integrado de Aedes**.
+
+Manejo Integrado de Aedes esta consolidándose como una enfoque estratégico de prevención, reducción, control y/o eliminación de las condiciones que favorecen; 1) el desarrollo y las abundancias de las poblaciones de Aedes aegypti, y 2) el contacto entre las poblaciones susceptibles y las poblaciones infeciosas de Aedes aegypti, mediante la utilización de las intervenciones y métodos de control disponibles (tradicionales e innovadores) de manera combinada y sincronizada en tiempo y espacio, minimizando el riesgo en las poblaciones que se pretende proteger, en la población de aplicadores, en las especies no blanco y el ambiente en general.
+
+El Manejo Integrado de Aedes tiene cinco componentes básicos: 1) vigilancia entomológica & evaluación de las acciones antivectoriales, 2) empoderamiento y movilización a las comunidades, 3) control de la etapa acuática del ciclo de vida, 4) control de la etapa terrestre del ciclo de vida, & 5) monitoreo de las resistencia a insecticidas (AMCA, 2021).
+
+Con la finalidad de definir las actividades de prevención y control de los componentes básicos tres y cuatro, el **Manejo Integrado de Aedes** contempla cinco situaciones epidemiológicas prevalentes en las localidades endémicas de México. 
+
+|Situación | Ejemplo |
+|--------|--------|
+| A) Localidades endémicas sin transmisión | Todas las localidades prioritarias, excepto Cancún & Mérida en el 2023| 
+| B) Localidades endémicas con transmisión epidémica en el primer trimestre | Cancún en el 2023 & Acapulco en el 2019|
+| C) Localidades endémicas con transmisión epidémica en el segundo semestre | Mayoria de las localidades en el 2024|
+| D) Localidades endémicas con transmisión epidémica en ambos semestres | Cancún & Mérida en el 2023|
+| E) Localidades endémicas con transmisión no epidémica| Localidades Prioritarias en el 2020 & 2021|
+: Situación Epidemiológica de las Localidades Endémicas Prioritarias {#tbl-escenarios .striped .hover .center}
+
+La transición de una localidad endémica con transmisión no epidémica a una localidad endémica con transmisión epidémica es jusgada por el canal endémico. Las localidades con transmisión endémica se caracterizan por presentar transmisión constante dentro los niveles de seguridad y alarma del canal endémico con la circulación de uno o más serotipos (DENV1 & DENV2). Las localidades con transmisión endémica transitan a localidades endémicas con transmisión epidémica cuando la transmisión se ubica por encima del nivel de alarma del canal endémico que por lo general ocurre cuando se introduce un nuevo genotipo o serotipo (DENV3 y DENV4), y circulan varios serotipos (por lo general más de dos), coincidiendo con eventos clímaticos como el niño (altas temperaturas e incremento en precipitaciones pluviales) y concentración de población susceptible a estos serotipos. Estas localidades también son conocidas como hiperendémicas.
+
+```{r  echo=FALSE, warning=FALSE, message=FALSE, fig.cap="Figura 4. Flujograma de los niveles de transmisión."}
+
+DiagrammeR::grViz("digraph {
+                  
+  # graph definitions
+  graph [layout = dot, rankdir = TB]
+  
+  
+   # node definitions
+  node [shape = rectangle, 
+  style = filled, 
+  color = grey, 
+  nodesep = 0.1,
+  fixedsize = true, 
+  width = 2.5]
+  
+  
+  # edge definition
+  edge [color = grey, arrowhead = normal, arrowtail = dot]
+  
+  ##### epidemiological data
+  
+  localidad [label = 'Localidad',  fillcolor =  '#0F9D58', color = 'white', fontcolor = 'white']
+  
+  loc_endemica [label = 'Endémica',  fillcolor =  '#0F9D58', color = 'white', fontcolor = 'white']
+  loc_no_endemica [label = 'No Endémica',  fillcolor =  '#0F9D58', color = 'white', fontcolor = 'white']
+  
+  
+  sin_trans [label = 'Sin Transmisión',  fillcolor =  '#0F9D58', color = 'white', fontcolor = 'white']
+  con_trans [label = 'Con Transmisión',  fillcolor =  '#0F9D58', color = 'white', fontcolor = 'white']
+  
+  trans_epi [label = 'Epidémica',  fillcolor =  '#0F9D58', color = 'white', fontcolor = 'white']
+  trans_no_epi [label = 'No Epidémica',  fillcolor =  '#0F9D58', color = 'white', fontcolor = 'white']
+  
+  todo [label = 'Todo El Año',  fillcolor =  '#0F9D58', color = 'white', fontcolor = 'white']
+  segundo_semestre [label = 'Segundo Semetre',  fillcolor =  '#0F9D58', color = 'white', fontcolor = 'white']
+  primer_semestre [label = 'Primer Semestre',  fillcolor =  '#0F9D58', color = 'white', fontcolor = 'white']
+ 
+  node [shape = circle,
+        fixedsize = true,
+        width = .9]
+  A [label = 'A',  fillcolor =  'orange', color = 'white', fontcolor = 'black']
+  B [label = 'B',  fillcolor =  'orange', color = 'white', fontcolor = 'black']
+  C [label = 'C',  fillcolor =  'orange', color = 'white', fontcolor = 'black']
+  D [label = 'D',  fillcolor =  'orange', color = 'white', fontcolor = 'black']
+  E [label = 'E',  fillcolor =  'orange', color = 'white', fontcolor = 'black']
+ 
+  
+  localidad -> {loc_no_endemica loc_endemica}
+  loc_endemica -> {sin_trans con_trans}
+  con_trans -> {trans_epi trans_no_epi}
+  
+  trans_epi -> {todo, segundo_semestre primer_semestre}
+  
+  sin_trans -> A
+  trans_no_epi -> B
+  primer_semestre -> C
+  segundo_semestre -> D
+  todo -> E
+  
+  
+}")
+
+```
+
+En el pasado (antes del 2009), el **Manejo Integrado del Dengue** en México basaba sus acciones antivectoriales en el enfoque reactivo (acciones de cobertura universal (barridos) en el segundo semestre cuando los brotes están en su zenit) (Figura 5. Línea roja). Actualmente, el **MIA en Mexico** esta migrando del enfoque reactivo al enfoque proactivo (Figura 5. Línea verde). El objetivo del enfoque proactivo es evitar o prevenir la carga de la enfermedad por muerte y los brotes a través de suavizar la pendiente de la curva de los casos acumulados disminuyendo la tasa de crecimiento exponencial manteniendo la transmisión dentro los niveles de seguridad y alarma del canal endémico, lo cual permite tener una pendiente prolongada con disminución de la transmisión, favoreciendo al sistema de salud al evitar la saturación de los servicios de salud (atención del primer nivel, servicios hospitalarios, diagnósticos de laboratorio oportunos, & acciones de control vectorial) y disminuyendo la carga de la enfermedad.
+
+Idealmente e hipotéticamente, en el enfoque proactivo las localidades endémicas tiene dos requisitos, el primero es la identificación de los escenarios epidemiológicos basados en la transmisión y las abundancias persistentes, y el segundo es realizar acciones específicas en dos momentos del año (Figura 5. Área o columnas rojas). En el primer momento las acciones sustantivas en los escenarios epidemiológicos de mayor riesgo incluyen el control larvario (control fisico y control químico) (CL), nebulización térmica peridomiciliar (NT), y el rociado residual intradomiciliario (IRS) (PAHO 2019, WHO 2024). En el segundo momento, se realiza un reforzamiento con control larvario y nebulización térmica peridomiciliar. El objetivo de estas intervenciones es prevenir el desarrollo de la etapa acuática, eliminar las hembras infectadas alimentandose o oviponiendo, eliminar las hembras en reposo y finalmente, romper el contacto aedes-humano y la transmisión. 
+
+Estas acciones se complementan con las acciones básicas y específicas que realiza el programa de prevención y control del dengue, como son el control de probables y los hotspots del vector. Adicionamente, el programa o los municipios, podrán realizar acciones especificas de soporte como nebulización y eliminación masiva de criaderos (descacharización) en el área de mayor riesgo, o en toda la localidad.
+
+Dado que los patrones temporales de la transmisión son heterogeneos y la descripción del enfoque proactivo es ideal e ilustrativa, a continuación se describen las acciones de prevención y control de la etapa acuática y terrestre de *Aedes aegypti* bajo el enfoque proactivo para cada una de las situaciones epidemiológicas descritas en los párrafos precedentes.
+
+```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.cap="Figura 5. Ilustración esquemática del Manejo Integrado de las Arbovirosis en México."}
+# Step 1. load the dataset #####
+load("/Users/fdzul/Library/CloudStorage/OneDrive-Personal/automatic_read_sinave/8.RData/epid_channel_data.RData")
+
+# Step 2. extract the dengue cases of veracruz ####
+x <- x |>
+    dplyr::filter(DES_EDO_RES == "VERACRUZ") 
+
+y <- tibble::tibble(SEM = x$SEM,
+                    y = x$q25,
+                    arm = "Nuevo Paradigma")
+prob <- tibble::tibble(SEM = x$SEM,
+                       prob = rep(0, length(x$SEM)))
+
+# plot risk stratificaction  #####
+ggplot2::ggplot() +
+    ggplot2::geom_rect(ggplot2::aes(xmin = c(-Inf, 25), 
+                                    xmax = c(25, Inf), 
+                                    ymin = -Inf, 
+                                    ymax = Inf),
+                       fill = c("#2EB67D", "#E01E5A"),
+                       alpha = .2) +
+    ggplot2::geom_rect(ggplot2::aes(xmin = 20, 
+                                    xmax = 25, 
+                                    ymin = -Inf, 
+                                    ymax = Inf),
+                       fill = "#2EB67D",
+                       alpha = 0.8) +
+    ggplot2::geom_rect(ggplot2::aes(xmin = 38, 
+                                    xmax = 40, 
+                                    ymin = -Inf, 
+                                    ymax = Inf),
+                       fill = "#2EB67D",
+                       alpha = 0.8) +
+    ggplot2::geom_vline(xintercept = 25,
+                        color = "gray", #"#36C5F0",
+                        size = 1,
+                        linetype = 3) +
+    ggplot2::geom_vline(xintercept = 20,
+                        color = "gray", #"#36C5F0",
+                        size = 1,
+                        linetype = 3) +
+    ggplot2::geom_line(data = x, 
+                       ggplot2::aes(x = SEM,
+                                    y = q75-10),
+                       col = "#E01E5A",
+                       size = 3) +
+    ggplot2::geom_line(data = y, 
+                       ggplot2::aes(x = SEM,
+                                    y = y),
+                       color = "#2EB67D", #"#36C5F0",
+                       size = 3) +
+    ggplot2::ylab("Número de Casos") +
+    ggplot2::xlab("Semanas Epidemiológicas") +
+    ggplot2::annotate("text",
+                      label = "Control Proactivo",
+                      x = 10, 
+                      y = 450,
+                      #text = "risk",
+                      col = "#2EB67D",
+                      size = 6) +
+    ggplot2::annotate("text",
+                      label = "Escenarios Operativos \nbasados \nen \nTransmisión Persistente",
+                      x = 10, 
+                      y = 380,
+                      #text = "risk",
+                      col = "#2EB67D",
+                      size = 4) +
+    ggplot2::annotate("text",
+                      label = "Control Reactivo",
+                      x = 42, 
+                      y = 450,
+                      #text = "risk",
+                      col = "#E01E5A",
+                      size = 6) +
+    ggplot2::annotate("text",
+                      label = "Escenarios Operativos \nbasados \nen \nTransmisión Activa",
+                      x = 48, 
+                      y = 380,
+                      #text = "risk",
+                      col = "#E01E5A",
+                      size = 4) +
+    ggplot2::geom_line(data = prob, 
+                       ggplot2::aes(x = SEM,
+                                    y = prob),
+                       color = "#36C5F0",
+                       size = 2)  +
+    ggplot2::annotate("text",
+                      label = "Acciones Específicas Básicas",
+                      x = 10, 
+                      y = 280,
+                      col = "gray",
+                      size = 4) +
+    ggplot2::annotate("text",
+                      label = "Control de Probables",
+                      x = 10, 
+                      y = 250,
+                      col = "#36C5F0",
+                      size = 4) +
+  ggplot2::annotate("text",
+                      label = "Hotspots del Vector",
+                      x = 10, 
+                      y = 230,
+                      col = "#36C5F0",
+                      size = 4) +
+    ggplot2::annotate("text",
+                      label = "Acciones Específicas de Soporte",
+                      x = 10, 
+                      y = 150,
+                      col = "gray",
+                      size = 4) +
+    ggplot2::annotate("text",
+                      label = "Termonebulización,\n Nebulización, & \nEliminación Masiva de Criaderos",
+                      x = 10, 
+                      y = 110,
+                      col = "gray",
+                      size = 3) +
+  ggplot2::annotate("text",
+                      label = "Sin Control",
+                      x = 30, 
+                      y = 425,
+                      #text = "risk",
+                      col = "#E01E5A",
+                      size = 4) +
+  ggplot2::annotate("text",
+                      label = "Con Control",
+                      x = 33, 
+                      y = 105,
+                      col = "#2EB67D",
+                      size = 4) +
+  ggplot2::annotate(geom ="text",
+                      label = "Control Larvario, ULV Térmica & IRS",
+                      x = 22, 
+                      y = 220,
+                    angle = 90,
+                      col = "white",
+                      size = 4) +
+  ggplot2::annotate(geom ="text",
+                      label = "Control Larvario & ULV Térmica",
+                      x = 39, 
+                      y = 220,
+                    angle = 90,
+                      col = "white",
+                      size = 4)
+
+```
+
+**Situación Epidemiológica A & B**. Las localidades endémicas sin transmisión o con transmisión no epidémica, deben basar deben basar sus acciones de prevención y control en los escenarios operativos definidos por los hotspots de la transmisión persistente y los hotspots de la abundancia persistente (Figura 5. Área verde).
+
+**Primer Semestre**. A principios del primer semestre de la semana epidemiológica uno a la veinte, se hace incapie en el control de probables y los hotspots del vector usando en el análisis espacial de los datos de la vigilancia entomológica del año en curso. En ambos se recomienda el control larvario (CL) + rociado residual intradomiciliario (IRS)  + ULV térmica (nebulización térmica). A partir de la semana epidemiológica 20 hasta la semana 25, en las áreas identificadas como de **muy alto riesgo de transmisión** (y **alto de riesgo de transmisión** cuando los recursos disponibles lo permitan) se indica la implementación del Rociado Residual Intradomiciliario (IRS) + Control Larvario (CL) y ULV térmica peridomiciliar (Figura 5. Área Roja). Estas acciones básicas pueden complementarse con otras acciones de soporte como la eliminación masiva de criaderos, y el ULV (fria o caliente) en sitios de concentración. El control de probables y los hotspots del vector se continua en las áreas no intervenidas es decir en las áreas identificadas de riesgo medio y riesgo bajo de transmisión.
+
+**Segundo Semestre**. Se continua con el control de probables y los hotspots del vector hasta el fín del año. En las áreas identificadas de **muy alto riesgo de transmisión** se realiza un segundo un operativo focalizado de control larvario & termonebulización. Adicionamente se pueden aplicarlas acciones específicas de soporte (Figura 5. Área Roja).
+
+
+**Situación Epidemiológica C** (Las localidades con transmisión epidémica (brote) en el primer semestre del año). En general, en éstas localidades con brote el objetivo del ***Manejo Integrado de Aedes*** es evitar el contacto humano-aedes mediante la reducción inmediata de las abundancias de las poblaciones de *Aedes aegypti* con acciones antivectoriales de cobertura universal en la ciudad afectada y operativos de ULV-termica + Control larvario en las áreas de alto riesgo identificadas con los análisis espaciales de la transmisión activa (mapas de calor o cadenas de transmisión).
+
+**Primer Semestre**. En estas localidades endémicas se recomienda operativos de barrido de nebulización con una aplicación por semana completando 4 aplicaciones, y control larvario con sus estudios entomológicos previos y posteriores, y un avance del 100% en seis semanas (magaoperativo). Asi mismo se recomienda un operativo focalizado de Termonebulización en las áreas identificadas como de **muy alto riesgo de transmisión** (y **alto de riesgo de transmisión** cuando los recursos disponibles lo permitan) con una aplicación por semana completando 4 aplicaciones. Se recomienda la coordinación con el municipio para realizar operativos de termonebulización en sitios de concentración másiva y eliminación másiva de criaderos.
+
+**Segundo Semestre**. Cuando el brote se controlo, Se recomienda realizar las mismas actividades descritas en las localidades con la **Situación Epidemiológica A**, es decir control de probables y los hotspots del vector usando en el análisis espacial los datos de la vigilancia entomológica del año en curso. En ambos se recomienda el control larvario (CL) + rociado residual intradomiciliario (RSI) ó CL + ULV (fria o caliente).
+
+**Situación Epidemiológica D**. Las localidades con transmisión epidémica en el segundo trimestre.
+
+**Primer Semestre**. En éstas localidades se recomienda realizar las misma actividades que en las localidades con la **Situación Epidemiológica A**.
+
+**Segundo Semestre**. Si apesar de realizar el **Manejo Integrado de Aedes** en éstas localidades, se instala un brote ocasionado por cirulación de un nuevo serotipo aunado al incremento de la temperatura y precipitación, se recomienda realizar las mismas actividades de las localidades con **Situación Epidemiológica B**. Operativos de Barrido de Nebulización y Control Larvario en toda la ciudad, y operativos focalizado de Termonebulización en las áreas identificadas como de **muy alto riesgo de transmisión** mediante las cadenas de transmisión o los mapas de calor, operativos de termonebulización en sitios de concentración y eliminación masiva de criaderos.
+
+**Situación Epidemiológica E**. Las localidades con transmisión epidémica en todo el año se recomienda Megaoperativos ú Operativos de Barrido de Nebulización y Control Larvario. Además de operativos focalizado de Termonebulización en las áreas identificadas como de muy alto riesgo de transmisión mediante las cadenas de transmisión o los mapas de calor, operativos de termonebulización en sitios de concentración y eliminación masiva de criaderos
+
+
+|Situación | Anuales | Primer Semestre | Segundo Semestre | Adicionales|
+|--------|--------|--------|--------|--------|
+| A) Sin transmisión ó transmisión no epidémica |Control de Probables |  Operativos CL, ULV Térmica y IRS en áreas de Alto Riesgo | Operativo de CL y ULV Térmica en áreas de Alto Riesgo | Eliminación Masiva de Criaderos |
+| |Hotspots del Vector| | |ULV Térmica en Sitios de Concentración|
+| B) Transmisión Epidémica en el Primer Trimestre | | Operativos o Megaoperativos de ULV| Control de Probables | Eliminación Masiva de Criaderos|
+| | | Operativos CL & ULV Térmica en área de alto Riesgo |Hotspots del vector |ULV Térmica en Sitios de Concentración|
+| C) Transmisión Epidémica en el Segundo Semestre |Control de Probables |Operativos CL, ULV Térmica y IRS en áreas de Alto Riesgo |Operativos o Megaoperativos de ULV |Eliminación Masiva de Criaderos|
+| |Hotspots del Vector | | Operativos CL & ULV Térmica en área de alto Riesgo |ULV Térmica en Sitios de Concentración |
+| D) Transmisión Epidémica en ambos Semestres | |Operativos o Megaoperativos de ULV |Operativos o Megaoperativos de ULV |Eliminación Masiva de Criaderos|
+|  | |Operativos CL, ULV Térmica y IRS en áreas de Alto Riesgo |Operativos CL, ULV Térmica y IRS en áreas de Alto Riesgo |ULV Térmica en Sitios de Concentración|
+
+: Situación Epidemiológica de las Localidades Endémicas Prioritarias y Actividades de Control {#tbl-escenarios .striped .hover .center}
+
+
+### Vigilancia Entomológica 
+
+
+La Organización Mundial de la Salud (2017) en el documento **Respuesta Mundial para el control de vectores 2017–2030** define a la vigilancia entomológica como "la recopilación, el análisis y la interpretación regulares y sistemática de datos entomológicos para la evaluación de riesgos para la salud y para la planificación, implementación, seguimiento y evaluación del control de vectores". La vigilancia entomológica junto con la vigilancia epidemiológica son la materia prima para la toma de desiciones en el programa de prevención y control de las arbovirosis. 
+
+La vigilancia entomológica basada en los indicadores larvarios, repetidamente han mostrado inconsistencias en su relación con los casos, la transmisión ó el riesgo de transmisión. Actualmente el programa nacional de prevención y control de las ETVs, recomienda los indicadores larvarios antes y después de la realización de acciones dirigidas a la etapa acuática del vector. En México, el programa tiene implementado un sistema de vigilancia entomológica con ovitrampas en todos los estados (excepto, Ciudad de Mexico y Tlaxcala). La vigilancia entomológica esta basado en un muestreo sistemático y genera bases de datos semanales con resolución espacial a nivel de casa. Adicionalmente, el programa tiene implementado la colecta de colecta de adultos y la vigilancia entomovirológica o colecta de adultos en localides centinelas (Acapulco, Cuernavaca, Veracruz & Tapachula). Las
+Unidades de Investigación Entomológica y de Bioensayos del CENAPRECE, han generado información sobre la susceptibilidad a insecticidas de la fase acuática y la fase terrestre de *Ae. aegypti* en México (http://www.cenaprece.salud.gob.mx/programas/interior/vectores/descargas/pdf/MonitoreoResistenciaInsecticidas2014.pdf). 
+
+La vigilancia entomológica es parte esencial en el *Manejo Integrado de Aedes* en México y las actividades específicas por temporalidad agregada en los periodos interepidémicos y epidémicos son proporcionados en la @tbl-interpidemic y la tabla @tbl-epidemic. En el MIA se da énfasis en la colecta de adultos al menos en el escenario de Alto Riesgo, la vigilancia entomológica con ovitrampas se continua en toda la localidad con periodicidad semanal, la productividad pupal se recomienda la menos una vez en al area de Alto Riesgo, la encuesta y verificación de los estudios larvarios antes y después del control larvario.
+Los estudios de resistencia insecticidas son recomendados cuando se implmentan las actividades antivectoriles que se basan en el uso racional y juicioso de insecticidas. En el MIA de México, se recomienda al menos una vez en el área de alto riesgo, y sería ideal diagnosticar la susceptibilidad  en toda la localidad con al menos 20 muestras.
+
+| Actividad | Bajo | Moderado |Alto |Muy Alto|
+|------|:------:|:------:|:------:|:------:|
+| Colecta de Adultos| | |  |Mensual|
+| Colecta de Huevos| Semanal | Semanal |Semanal|Semanal|
+| Productividad Pupal|     |     ||Una vez|
+| Encuesta-Verificación|    |    ||Antes y Después de CL|
+| Resistencia a Insecticidas|     |     ||Una vez|
+
+: Primer semestre en el periodo interepidémico {#tbl-interpidemic .striped .hover}
+
+
+| Actividad | Bajo | Moderado |Alto |Muy Alto|
+|------|:------:|:------:|:------:|:------:|
+| Colecta de Adultos| | |  |Mensual|
+| Colecta de Huevos| Semanal | Semanal |Semanal|Semanal|
+| Productividad Pupal|     |     |||
+| Encuesta-Verificación|    |    ||Antes y Después de CL|
+| Resistencia a Insecticidas|     |     ||Una vez|
+
+: Primer semestre en el periodo epidémico {#tbl-epidemic .striped .hover}
+
+## Manuales y guías como apoyo al MIA
+
+El *Manejo Integrado de Aedes* en México se apoya en las guías operativas nacionales del CENAPRECE (https://www.gob.mx/salud/cenaprece/documentos/guias-operativas-de-arbovirosis-2020) e internacionales de la Organización Mundial de la Salud y la Organización Panamericana de la Salud. Los manuales y las guías con sus respectivas direciones electrónicas para su acceso son proporcionadas en la tablas @tbl-manuales. Para la identificación de los escenarios epidemiológicos el Programa Nacional de ETVs e IVAs ha desarollado un curso de análisis espacial del dengue (https://fdzul.github.io/spatial_analysis_dengue_R_2024/) y  un ecosistema en R para
+el análisis del dengue en Mexico llamado **dengueverse** (https://calm-hummingbird-41cb33.netlify.app/talks/dengueverse). En el dengueverse se incluyen los paquetes en R [rgeomex](), [densnve](https://fdzul.github.io/densnv/), [deneggs](https://fdzul.github.io/deneggs/), [denhotspots](https://fdzul.github.io/denhotspots/articles/count_cases_by_polygons.html) & [popmex](https://fdzul.github.io/popmex/)  
+
+| Guia | link | Institución |
+|------|:------:|:------:|
+|Guía Metodológica para las Acciones de Control Larvario| [link](https://www.gob.mx/cms/uploads/attachment/file/604075/Guia_Metodolo_gica_para_las_Acciones_de_Control_Larvario-comprimido.pdf)| CENAPRECE | 
+|Guía Metodológica para la Instalación y Mantenimiento del Insectario| [link](https://www.gob.mx/cms/uploads/attachment/file/598095/Guia_Metodologica_para_la_Instalacion_y_Mantenimiento_del__Insectario_compressed.pdf)| CENAPRECE | 
+|Guía Metodológica para la los Estudios Entomológicos en Fase Larvario y Pupal| [link](https://www.gob.mx/cms/uploads/attachment/file/598094/Guia_Metodologica_para_Estudios_Entomologicos_en_Fase_larvaria_y_Pupal_2020_compres.pdf)| CENAPRECE | 
+|Guía para la determinación de la Susceptibilidad/Resistencia y Eficacia Biológica a Insecticidas| [link](https://www.gob.mx/cms/uploads/attachment/file/598093/Guia_para_la_Determinaci_n_de_la_SusceptibilidadResistencia_y_Eficacia_..._compr.pdf)| CENAPRECE | 
+|Guía Metodológica para la Vigilancia Entomológica con Ovitrampas| [link](https://www.gob.mx/cms/uploads/attachment/file/598092/Guia_Metodologica_para_Vigilancia_Entomologica_con_Ovitrampas_compressed.pdf)| CENAPRECE 
+| 
+|Manual de Organización & Procedimientos de las Unidades de Investigación Entomológica y de Bioensayos (UIEBs)| [link](https://www.gob.mx/cms/uploads/attachment/file/598088/Manual_de_Organizaci_n_y_Procedimientos_de_las_UIEB_s.pdf)| CENAPRECE |
+|Equipo de Protección y Uniformes Recomendades por el CENAPRECE para el Personal del Programa de Prevencipon y Control de Enfermedades Transmitdas por Vector| [link](https://www.gob.mx/cms/uploads/attachment/file/598087/Equipos_de_proteccion_y_uniformes_Recomendados_por_CENAPRECE_2020.pdf)| CENAPRECE |
+|Guía Metodológica para la Nebulización UBV| [link](https://www.gob.mx/cms/uploads/attachment/file/598085/Guia_Metodologica_para_Nebulizacion_Espacial_UBV.pdf)| CENAPRECE |
+|Guía Metodológica para la Nebulización Térmica| [link](https://www.gob.mx/cms/uploads/attachment/file/598085/Guia_Metodologica_para_Nebulizacion_Espacial_UBV.pdf)| CENAPRECE |
+|Guía Metodológica para el Rociado Domiciliario| [link](https://www.gob.mx/cms/uploads/attachment/file/598083/Guia_Metodologica_para_el_Rociado_Domiciliario.pdf)| CENAPRECE |
+|Guía Metodológica para el Mantenimiento y Reparación de Equipo| [link](https://www.gob.mx/cms/uploads/attachment/file/598082/Guia_Metodologica_para_el_mantenimiento_y_reparacion_de_equipos.pdf)|CENAPRECE|
+|Manual para aplicar rociado residual intradomiciliario en zonas urbanas para el control de Aedes aegypti| [link](https://iris.paho.org/handle/10665.2/51638)|OPS|
+|Documento técnico para la implementación de intervenciones basado en escenarios operativos genéricos para el control del Aedes aegypti| [link](https://iris.paho.org/handle/10665.2/51654)|OPS|
+|Operational manual on indoor residual spraying: Control of vectors of malaria, Aedes-borne diseases, Chagas disease, leishmaniases and lymphatic filariasis| [link](https://www.who.int/publications/i/item/9789240083998#:~:text=Indoor%20residual%20spraying%20(IRS)%20involves,to%20transmit%20pathogens%20to%20humans.)|OMS|
+|Respuesta Mundial para el control de vectores 2017–2030| [link](https://www.paho.org/es/documentos/respuesta-mundial-para-control-vectores-2017-2030-0)|OMS|
+|Global arbovirus initiative: preparing for the next pandemic by tackling mosquito-borne viruses with epidemic and pandemic potential| [link](https://www.who.int/publications/i/item/9789240088948)|OMS|
+|Handbook for integrated vector management| [link](https://iris.who.int/handle/10665/44768)|OMS|
+|Global strategic framework for integrated vector management| [link](https://iris.who.int/handle/10665/68624)|OMS|
+|Monitoring and evaluation indicators for integrated vector management| [link](https://iris.who.int/handle/10665/76504)|OMS|
+| Best Practices for Integrated Mosquito Management| [link](https://www.mosquito.org/bmp/)|AMCA|
+|Manual para la identificación de los hotspots en áreas urbanas| [link](https://fdzul.github.io/manual_hotspots/)|AMCA|
+
+: Manuales y Gúias para el MIA {#tbl-manuales .striped .hover}
+
+
+
+## Conclusión
+
+El Manejo Integrado de los Vectores (MIV) es una estrategia esencial para el control y prevención de las enfermedades transmitidas por vectores como el dengue, chikungunya y zika. Este enfoque se basa en el conocimiento profundo de la biología de los vectores, sus ciclos de transmisión y la interacción con las poblaciones humanas. La respuesta global para el control de los vectores, establecida por la Organización Mundial de la Salud (OMS), ofrece directrices detalladas para implementar el MIV, buscando lograr un control efectivo y sostenible de la transmisión de estas enfermedades.
+
+En México, el Programa Nacional de Prevención y Control de las Enfermedades Transmitidas por Vector se ha centrado en implementar el Manejo Integrado de las Arbovirosis (MIA) basado en el MIV de la OMS. A través de un análisis espacial de datos históricos y recientes, se identifican los escenarios operativos en áreas urbanas endémicas. Estos escenarios se basan en la transmisión persistente y la abundancia persistente del vector, así como en la transmisión activa y la abundancia reciente del vector. Esta estratificación permite una focalización más precisa de las intervenciones, maximizando la eficacia de los recursos disponibles.
+
+En función de diferentes situaciones epidemiológicas, se implementan acciones específicas de prevención y control. Desde la reducción de las poblaciones de vectores mediante control larvario y nebulización, hasta la movilización de las comunidades y el monitoreo constante de la resistencia a los insecticidas. El enfoque proactivo se ha vuelto fundamental, evitando brotes y manteniendo la transmisión dentro de niveles manejables.
+
+En resumen, el Manejo Integrado de los Vectores se ha convertido en una herramienta fundamental en la lucha contra las enfermedades transmitidas por vectores en México y en todo el mundo. Su enfoque integral y estratégico, basado en la comprensión profunda de la biología y ecología de los vectores, ha demostrado ser eficaz para reducir la carga de estas enfermedades y proteger la salud de las poblaciones vulnerables.
+
+
+
+## Referencias
+
+World Health Organization. 2017. Global vector control response 2017--2030. Geneva: World Health Organization.
+
+World Health Organization. 2012. Handbook for Integrated Vector Management. Geneva: World Health Organization.
+
+World Health Organization. 2023. Framework for National Surveillance & Control Plans for Aedes vectors in the Pacific. Manila: WHO Regional Office for the Western Pacific.
+
+World Health Organization (WHO). 2023. Disease Outbreak News; Dengue – Global situation Available at: https://www.who.int/emergencies/disease-outbreak-news/item/2023-DON498.
+
+World Health Organization. 2020. Manual for surveillance and control of Aedes vectors in the Pacific. The Pacific Community and World Health Organization. Suva, Fiji.
+
+Roiz D, Wilson AL, Scott TW, Fonseca DM, Jourdain F, Müller P, Velayudhan R, Corbel V. 2018. PLoS Negl Trop Dis. 12(12):e0006845. doi: 10.1371/journal.pntd.0006845.
+
+Pan American Health Organization. 2020. Integrated Management Strategy for Arboviral Disease Prevention and Control in the Americas. Washington, D.C.
+
+Pan American Health Organization. 2019. Documento técnico para la implementación de intervenciones basado en escenarios operativos genéricos para el control del Aedes aegypti. Washington, D.C.
+
+Pan American Health Organization. 2019. Documento operativo de aplicación del manejo integrado de vectores adaptado al contexto de las Américas. Washington, D.C.
+
+Ministry of Health and Population (MHP). 2020. National Guidelines on Integrated Vector Management. Goverment of Nepal. Teku, Kathmandu.
+
+Dzul-Manzanilla F, Correa-Morales F, Che-Mendoza A, Palacio-Vargas J, Sánchez-Tejeda G, González-Roldan JF, López-Gatell H, Flores-Suárez AE, Gómez-Dantes H, Coelho GE, da Silva Bezerra HS, Pavia-Ruz N, Lenhart A, Manrique-Saide P, Vazquez-Prokopec GM.2021. Identifying urban hotspots of dengue, chikungunya, and Zika transmission in Mexico to support risk stratification efforts: a spatial analysis. Lancet Planet Health. 5(5):e277-e285. doi: 10.1016/S2542-5196(21)00030-9.
+
+American Mosquito Control Association (AMCA). 2021. Best Practices for Integrated Mosquito Management.American Mosquito Control Association. Sacramento, CA.
