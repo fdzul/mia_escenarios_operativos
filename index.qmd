@@ -54,7 +54,6 @@ La idea central es estratificar espacialmente las áreas urbanas endémicas de d
 
 : Definición de Escenarios Epidemiológicos {#tbl-escenarios_def .striped .hover tbl-colwidths="\[20,80\]"}
 
- 
 
 En la @fig-trans_pers se ilustran los escenarios operativos o epidemiológicos basados en los hotspots de la transmisión persistente y los hotspots de la abundancia persistente del vector en Mérida, Yucatán.
 
@@ -119,7 +118,7 @@ mapview::mapview(hotspots,
 
 ```
 
- 
+
 
 ##### Monterrey, Nuevo León.
 
@@ -149,7 +148,7 @@ mapview::mapview(hotspots,
 
 ```
 
- 
+
 
 ##### Acapulco, Guerrero.
 
@@ -177,7 +176,6 @@ mapview::mapview(hotspots,
 
 #### Hotspots de la Abundancia Persistente del Vector.
 
- 
 
 ##### Mérida, Yucatán.
 
@@ -190,7 +188,7 @@ deneggs::map_eggs_hotspots(betas = denmex::eggs_betas_31_yucatan ,
                            static_map = FALSE)
 ```
 
- 
+
 
 ##### Guadalajara, Jalisco.
 
@@ -206,7 +204,7 @@ deneggs::map_eggs_hotspots(betas = denmex::eggs_betas_14_jalisco,
                          static_map = FALSE)
 ```
 
- 
+
 
 ##### Monterrey, Nuevo León.
 
@@ -279,7 +277,7 @@ denhotspots::map_risk(risk = risk,
 
 ```
 
- 
+
 
 ##### [**Monterrey, Nuevo León**]{style="color:#990000"}
 
@@ -301,7 +299,7 @@ denhotspots::map_risk(risk = risk,
 
 ```
 
- 
+
 
 ##### [**Acapulco, Guerrero**]{style="color:#990000"}
 
