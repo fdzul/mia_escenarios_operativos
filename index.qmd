@@ -54,7 +54,6 @@ La idea central es estratificar espacialmente las áreas urbanas endémicas de d
 
 : Definición de Escenarios Epidemiológicos {#tbl-escenarios_def .striped .hover tbl-colwidths="\[20,80\]"}
 
-
 En la @fig-trans_pers se ilustran los escenarios operativos o epidemiológicos basados en los hotspots de la transmisión persistente y los hotspots de la abundancia persistente del vector en Mérida, Yucatán.
 
 ![Escenarios operativos basados en la transmisión persistente & la abundancia persistente del vector en Mérida, Yucatán. El mapa inferior representa los hotspots de la transmisión persistente, el mapa intermedio representa los hotspots de la abundancia persistente del vector y el mapa superior representan los escenarios operativos](transmision_persistente.jpg){#fig-trans_pers}
@@ -62,8 +61,6 @@ En la @fig-trans_pers se ilustran los escenarios operativos o epidemiológicos b
 #### Hotspots de la Transmisión Persistente.
 
 ##### Mérida, Yucatán.
-
-
 
 ```{r hotspots_dengue_merida, warning=FALSE, message=FALSE}
 #| echo: false
@@ -118,8 +115,6 @@ mapview::mapview(hotspots,
 
 ```
 
-
-
 ##### Monterrey, Nuevo León.
 
 ```{r hotspots_dengue_monterrey, warning=FALSE, message=FALSE}
@@ -148,8 +143,6 @@ mapview::mapview(hotspots,
 
 ```
 
-
-
 ##### Acapulco, Guerrero.
 
 ```{r hotspots_dengue_acapulco, warning=FALSE, message=FALSE}
@@ -176,7 +169,6 @@ mapview::mapview(hotspots,
 
 #### Hotspots de la Abundancia Persistente del Vector.
 
-
 ##### Mérida, Yucatán.
 
 ```{r vector_hotspots_merida}
@@ -187,8 +179,6 @@ deneggs::map_eggs_hotspots(betas = denmex::eggs_betas_31_yucatan ,
                            name = "SunsetDark",
                            static_map = FALSE)
 ```
-
-
 
 ##### Guadalajara, Jalisco.
 
@@ -203,8 +193,6 @@ deneggs::map_eggs_hotspots(betas = denmex::eggs_betas_14_jalisco,
                            name = "SunsetDark",
                          static_map = FALSE)
 ```
-
-
 
 ##### Monterrey, Nuevo León.
 
@@ -221,8 +209,6 @@ deneggs::map_eggs_hotspots(betas = betas_19_nuevo_leon,
                            static_map = FALSE)
 ```
 
-
-
 ##### Acapulco, Guerrero.
 
 ```{r vector_hotspots_acapulco}
@@ -234,11 +220,7 @@ deneggs::map_eggs_hotspots(betas = denmex::eggs_betas_12_guerrero,
                            static_map = FALSE)
 ```
 
-
-
 #### Escenarios Epidemiológicos u Operativos de la Transmisión y Abundancia Persistente.
-
-
 
 ##### [**Mérida, Yucatán**]{style="color:#990000"}
 
@@ -255,8 +237,6 @@ denhotspots::map_risk(risk = risk,
                       staticmap = FALSE)
 
 ```
-
-
 
 ##### [**Guadalajara, Jalisco**]{style="color:#990000"}
 
@@ -276,8 +256,6 @@ denhotspots::map_risk(risk = risk,
                       staticmap = FALSE)
 
 ```
-
-
 
 ##### [**Monterrey, Nuevo León**]{style="color:#990000"}
 
@@ -299,8 +277,6 @@ denhotspots::map_risk(risk = risk,
 
 ```
 
-
-
 ##### [**Acapulco, Guerrero**]{style="color:#990000"}
 
 ```{r risk_ageb_acapulco}
@@ -321,18 +297,14 @@ denhotspots::map_risk(risk = risk,
 
 Actualmente, El Programa Nacional de Prevención y Control de las Enfermedades Transmitidas por Vectores (ETVs) e Intoxicación por Veneno de Artrópodos (IVA) del Centro Nacional Prevención y Control de Enfermedades de la Secretaría de Salud Federal, ha identificado los escenarios epidemiológicos operativos en las localidades endémicas y prioritarias de todos los Estados de la República Mexicana, excepto (Chihuahua, Queretaro & Tlaxcala) y se ha desarrollado 21 dashboards estatales de acuerdo a la sugerencia de la **Iniciativa Global de las Arbovirosis** (WHO 2024) para la visualización de los escenarios de riesgo con la finalidad de facilitar la toma de desiciones por el personal directivo de los programas de prevención y control de las arbovirosis en los estados (@tbl-escenarios, @fig-dengue_risk).
 
-
-
 ```{r dengue_risk_map}
-#| label: fig-dengue_risk
-#| fig-cap: "Mapa de Avance de la identificación de los escenarios operativo en México"
 # Step 1. load the AGEE ####
 mex <- rgeomex::AGEE_inegi19_mx
 
 # Step 3. make the tible link ####
 link <- tibble::tibble(CVE_ENT = c("01","02", "03", "04", "05",
                                    
-                                   "06", "07", "10",
+                                   "06", "07", "09", "10",
                                    
                                    "11", "12", "13", "14", "15",
                                    
@@ -354,7 +326,7 @@ link <- tibble::tibble(CVE_ENT = c("01","02", "03", "04", "05",
                                 "https://silver-moxie-30857b.netlify.app",
                                 "https://adorable-tiramisu-303de1.netlify.app",
                                 # 08
-                                # 09
+                                "https://euphonious-crostata-930ad9.netlify.app",
                                 "https://preeminent-nougat-6307ee.netlify.app",
                                 
                                 # 11, 12, 13, 14, 15
@@ -406,7 +378,6 @@ mex_link |>
 ```
 
 
-
 | Estado                                                                   | Hotspots del Dengue | Hotspots del Vector | Escenarios |
 |------------------|:----------------:|:----------------:|:----------------:|
 | [01 Aguascalientes](https://dashing-manatee-5aedb8.netlify.app)          |          0          |          1          |     0      |
@@ -417,7 +388,7 @@ mex_link |>
 | [06 Colima](https://silver-moxie-30857b.netlify.app)                     |          4          |          4          |     3      |
 | [07 Chiapas](https://adorable-tiramisu-303de1.netlify.app)               |          9          |          2          |     2      |
 | 08 Chihuahua                                                             |          1          |          0          |     0      |
-| 09 Ciudad de México                                                      |          1          |          1          |     0      |
+| [09 Ciudad de México](https://euphonious-crostata-930ad9.netlify.app)                                                      |          1          |          1          |     0      |
 | [10 Durango](https://preeminent-nougat-6307ee.netlify.app)               |          1          |          3          |     1      |
 | [11 Guanajuato](https://sparkly-concha-17d36d.netlify.app)               |          1          |          2          |     0      |
 | [12 Guerrero](https://astounding-squirrel-94dd18.netlify.app)            |          4          |          4          |     4      |
@@ -457,7 +428,7 @@ En la figura @fig-trans_act se ilustran los escenarios operativos basado en las 
 ##### Valles Centrales, Oaxaca.
 
 ```{r heatmap_valles_centrales}
-load("/Users/fdzul/Library/CloudStorage/OneDrive-Personal/proyects/geocoding_mex/2024/8.RData/denmex_2024.RData")
+load("/Users/felipedzul/Library/CloudStorage/OneDrive-Personal/proyects/geocoding_mex/2024/8.RData/denmex_2024.RData")
 a <- densnv::mp_heatmap(locality = c("Oaxaca de Juarez", 
                                 "Santa María Atzompa",
                                 "San Jacinto Amilpas",
@@ -642,7 +613,6 @@ deneggs::map_eggs_hotspots(betas = villahermosa_2024$betas,
 
 ```
 
-
 ##### Monterrey, Nuevo León.
 
 ```{r hotspots_eggs_monterrey_2024}
@@ -673,7 +643,6 @@ deneggs::map_eggs_hotspots(betas = guadalajara_2024$betas,
                            static_map = FALSE)
 ```
 
-
 ### Fase III. Manejo Integrado de Aedes aegypti.
 
 En las arbovirosis transmitidas por los mosquitos Aedes como el dengue, chikungunya y zika, donde no existen tratamientos y medicamentos antivirales específicos para cortar la transmisión, y vacunas con aprobada eficacia para todos los serotipos y genotipos, la prevención, reducción, contención, control y eliminación de la transmisión de los agentes etiológicos es realizada a travéz del **Manejo Integrado de Aedes**.
@@ -682,15 +651,16 @@ Manejo Integrado de Aedes esta consolidándose como una enfoque estratégico de 
 
 El Manejo Integrado de Aedes tiene cinco componentes básicos: 1) vigilancia entomológica & evaluación de las acciones antivectoriales, 2) empoderamiento y movilización a las comunidades, 3) control de la etapa acuática del ciclo de vida, 4) control de la etapa terrestre del ciclo de vida, & 5) monitoreo de las resistencia a insecticidas (AMCA, 2021).
 
-Con la finalidad de definir las actividades de prevención y control de los componentes básicos tres y cuatro, el **Manejo Integrado de Aedes** contempla cinco situaciones epidemiológicas prevalentes en las localidades endémicas de México. 
+Con la finalidad de definir las actividades de prevención y control de los componentes básicos tres y cuatro, el **Manejo Integrado de Aedes** contempla cinco situaciones epidemiológicas prevalentes en las localidades endémicas de México.
 
-|Situación | Ejemplo |
-|--------|--------|
-| A) Localidades endémicas sin transmisión | Todas las localidades prioritarias, excepto Cancún & Mérida en el 2023| 
-| B) Localidades endémicas con transmisión epidémica en el primer trimestre | Cancún en el 2023 & Acapulco en el 2019|
-| C) Localidades endémicas con transmisión epidémica en el segundo semestre | Mayoria de las localidades en el 2024|
-| D) Localidades endémicas con transmisión epidémica en ambos semestres | Cancún & Mérida en el 2023|
-| E) Localidades endémicas con transmisión no epidémica| Localidades Prioritarias en el 2020 & 2021|
+| Situación                                                                  | Ejemplo                                                                |
+|------------------------------------|------------------------------------|
+| A\) Localidades endémicas sin transmisión                                  | Todas las localidades prioritarias, excepto Cancún & Mérida en el 2023 |
+| B\) Localidades endémicas con transmisión epidémica en el primer trimestre | Cancún en el 2023 & Acapulco en el 2019                                |
+| C\) Localidades endémicas con transmisión epidémica en el segundo semestre | Mayoria de las localidades en el 2024                                  |
+| D\) Localidades endémicas con transmisión epidémica en ambos semestres     | Cancún & Mérida en el 2023                                             |
+| E\) Localidades endémicas con transmisión no epidémica                     | Localidades Prioritarias en el 2020 & 2021                             |
+
 : Situación Epidemiológica de las Localidades Endémicas Prioritarias {#tbl-escenarios .striped .hover .center}
 
 La transición de una localidad endémica con transmisión no epidémica a una localidad endémica con transmisión epidémica es jusgada por el canal endémico. Las localidades con transmisión endémica se caracterizan por presentar transmisión constante dentro los niveles de seguridad y alarma del canal endémico con la circulación de uno o más serotipos (DENV1 & DENV2). Las localidades con transmisión endémica transitan a localidades endémicas con transmisión epidémica cuando la transmisión se ubica por encima del nivel de alarma del canal endémico que por lo general ocurre cuando se introduce un nuevo genotipo o serotipo (DENV3 y DENV4), y circulan varios serotipos (por lo general más de dos), coincidiendo con eventos clímaticos como el niño (altas temperaturas e incremento en precipitaciones pluviales) y concentración de población susceptible a estos serotipos. Estas localidades también son conocidas como hiperendémicas.
@@ -762,15 +732,15 @@ DiagrammeR::grViz("digraph {
 
 En el pasado (antes del 2009), el **Manejo Integrado del Dengue** en México basaba sus acciones antivectoriales en el enfoque reactivo (acciones de cobertura universal (barridos) en el segundo semestre cuando los brotes están en su zenit) (Figura 5. Línea roja). Actualmente, el **MIA en Mexico** esta migrando del enfoque reactivo al enfoque proactivo (Figura 5. Línea verde). El objetivo del enfoque proactivo es evitar o prevenir la carga de la enfermedad por muerte y los brotes a través de suavizar la pendiente de la curva de los casos acumulados disminuyendo la tasa de crecimiento exponencial manteniendo la transmisión dentro los niveles de seguridad y alarma del canal endémico, lo cual permite tener una pendiente prolongada con disminución de la transmisión, favoreciendo al sistema de salud al evitar la saturación de los servicios de salud (atención del primer nivel, servicios hospitalarios, diagnósticos de laboratorio oportunos, & acciones de control vectorial) y disminuyendo la carga de la enfermedad.
 
-Idealmente e hipotéticamente, en el enfoque proactivo las localidades endémicas tiene dos requisitos, el primero es la identificación de los escenarios epidemiológicos basados en la transmisión y las abundancias persistentes, y el segundo es realizar acciones específicas en dos momentos del año (Figura 5. Área o columnas rojas). En el primer momento las acciones sustantivas en los escenarios epidemiológicos de mayor riesgo incluyen el control larvario (control fisico y control químico) (CL), nebulización térmica peridomiciliar (NT), y el rociado residual intradomiciliario (IRS) (PAHO 2019, WHO 2024). En el segundo momento, se realiza un reforzamiento con control larvario y nebulización térmica peridomiciliar. El objetivo de estas intervenciones es prevenir el desarrollo de la etapa acuática, eliminar las hembras infectadas alimentandose o oviponiendo, eliminar las hembras en reposo y finalmente, romper el contacto aedes-humano y la transmisión. 
+Idealmente e hipotéticamente, en el enfoque proactivo las localidades endémicas tiene dos requisitos, el primero es la identificación de los escenarios epidemiológicos basados en la transmisión y las abundancias persistentes, y el segundo es realizar acciones específicas en dos momentos del año (Figura 5. Área o columnas rojas). En el primer momento las acciones sustantivas en los escenarios epidemiológicos de mayor riesgo incluyen el control larvario (control fisico y control químico) (CL), nebulización térmica peridomiciliar (NT), y el rociado residual intradomiciliario (IRS) (PAHO 2019, WHO 2024). En el segundo momento, se realiza un reforzamiento con control larvario y nebulización térmica peridomiciliar. El objetivo de estas intervenciones es prevenir el desarrollo de la etapa acuática, eliminar las hembras infectadas alimentandose o oviponiendo, eliminar las hembras en reposo y finalmente, romper el contacto aedes-humano y la transmisión.
 
 Estas acciones se complementan con las acciones básicas y específicas que realiza el programa de prevención y control del dengue, como son el control de probables y los hotspots del vector. Adicionamente, el programa o los municipios, podrán realizar acciones especificas de soporte como nebulización y eliminación masiva de criaderos (descacharización) en el área de mayor riesgo, o en toda la localidad.
 
 Dado que los patrones temporales de la transmisión son heterogeneos y la descripción del enfoque proactivo es ideal e ilustrativa, a continuación se describen las acciones de prevención y control de la etapa acuática y terrestre de *Aedes aegypti* bajo el enfoque proactivo para cada una de las situaciones epidemiológicas descritas en los párrafos precedentes.
 
-```{r, echo=FALSE, warning=FALSE, message=FALSE, fig.cap="Figura 5. Ilustración esquemática del Manejo Integrado de las Arbovirosis en México."}
+```{r mia, echo=FALSE, warning=FALSE, message=FALSE, fig.cap="Figura 5. Ilustración esquemática del Manejo Integrado de las Arbovirosis en México."}
 # Step 1. load the dataset #####
-load("/Users/fdzul/Library/CloudStorage/OneDrive-Personal/automatic_read_sinave/8.RData/epid_channel_data.RData")
+load("/Users/felipedzul/Library/CloudStorage/OneDrive-Personal/automatic_read_sinave/8.RData/epid_channel_data.RData")
 
 # Step 2. extract the dengue cases of veracruz ####
 x <- x |>
@@ -917,10 +887,9 @@ ggplot2::ggplot() +
 
 **Situación Epidemiológica A & B**. Las localidades endémicas sin transmisión o con transmisión no epidémica, deben basar deben basar sus acciones de prevención y control en los escenarios operativos definidos por los hotspots de la transmisión persistente y los hotspots de la abundancia persistente (Figura 5. Área verde).
 
-**Primer Semestre**. A principios del primer semestre de la semana epidemiológica uno a la veinte, se hace incapie en el control de probables y los hotspots del vector usando en el análisis espacial de los datos de la vigilancia entomológica del año en curso. En ambos se recomienda el control larvario (CL) + rociado residual intradomiciliario (IRS)  + ULV térmica (nebulización térmica). A partir de la semana epidemiológica 20 hasta la semana 25, en las áreas identificadas como de **muy alto riesgo de transmisión** (y **alto de riesgo de transmisión** cuando los recursos disponibles lo permitan) se indica la implementación del Rociado Residual Intradomiciliario (IRS) + Control Larvario (CL) y ULV térmica peridomiciliar (Figura 5. Área Roja). Estas acciones básicas pueden complementarse con otras acciones de soporte como la eliminación masiva de criaderos, y el ULV (fria o caliente) en sitios de concentración. El control de probables y los hotspots del vector se continua en las áreas no intervenidas es decir en las áreas identificadas de riesgo medio y riesgo bajo de transmisión.
+**Primer Semestre**. A principios del primer semestre de la semana epidemiológica uno a la veinte, se hace incapie en el control de probables y los hotspots del vector usando en el análisis espacial de los datos de la vigilancia entomológica del año en curso. En ambos se recomienda el control larvario (CL) + rociado residual intradomiciliario (IRS) + ULV térmica (nebulización térmica). A partir de la semana epidemiológica 20 hasta la semana 25, en las áreas identificadas como de **muy alto riesgo de transmisión** (y **alto de riesgo de transmisión** cuando los recursos disponibles lo permitan) se indica la implementación del Rociado Residual Intradomiciliario (IRS) + Control Larvario (CL) y ULV térmica peridomiciliar (Figura 5. Área Roja). Estas acciones básicas pueden complementarse con otras acciones de soporte como la eliminación masiva de criaderos, y el ULV (fria o caliente) en sitios de concentración. El control de probables y los hotspots del vector se continua en las áreas no intervenidas es decir en las áreas identificadas de riesgo medio y riesgo bajo de transmisión.
 
 **Segundo Semestre**. Se continua con el control de probables y los hotspots del vector hasta el fín del año. En las áreas identificadas de **muy alto riesgo de transmisión** se realiza un segundo un operativo focalizado de control larvario & termonebulización. Adicionamente se pueden aplicarlas acciones específicas de soporte (Figura 5. Área Roja).
-
 
 **Situación Epidemiológica C** (Las localidades con transmisión epidémica (brote) en el primer semestre del año). En general, en éstas localidades con brote el objetivo del ***Manejo Integrado de Aedes*** es evitar el contacto humano-aedes mediante la reducción inmediata de las abundancias de las poblaciones de *Aedes aegypti* con acciones antivectoriales de cobertura universal en la ciudad afectada y operativos de ULV-termica + Control larvario en las áreas de alto riesgo identificadas con los análisis espaciales de la transmisión activa (mapas de calor o cadenas de transmisión).
 
@@ -936,86 +905,77 @@ ggplot2::ggplot() +
 
 **Situación Epidemiológica E**. Las localidades con transmisión epidémica en todo el año se recomienda Megaoperativos ú Operativos de Barrido de Nebulización y Control Larvario. Además de operativos focalizado de Termonebulización en las áreas identificadas como de muy alto riesgo de transmisión mediante las cadenas de transmisión o los mapas de calor, operativos de termonebulización en sitios de concentración y eliminación masiva de criaderos
 
-
-|Situación | Anuales | Primer Semestre | Segundo Semestre | Adicionales|
-|--------|--------|--------|--------|--------|
-| A) Sin transmisión ó transmisión no epidémica |Control de Probables |  Operativos CL, ULV Térmica y IRS en áreas de Alto Riesgo | Operativo de CL y ULV Térmica en áreas de Alto Riesgo | Eliminación Masiva de Criaderos |
-| |Hotspots del Vector| | |ULV Térmica en Sitios de Concentración|
-| B) Transmisión Epidémica en el Primer Trimestre | | Operativos o Megaoperativos de ULV| Control de Probables | Eliminación Masiva de Criaderos|
-| | | Operativos CL & ULV Térmica en área de alto Riesgo |Hotspots del vector |ULV Térmica en Sitios de Concentración|
-| C) Transmisión Epidémica en el Segundo Semestre |Control de Probables |Operativos CL, ULV Térmica y IRS en áreas de Alto Riesgo |Operativos o Megaoperativos de ULV |Eliminación Masiva de Criaderos|
-| |Hotspots del Vector | | Operativos CL & ULV Térmica en área de alto Riesgo |ULV Térmica en Sitios de Concentración |
-| D) Transmisión Epidémica en ambos Semestres | |Operativos o Megaoperativos de ULV |Operativos o Megaoperativos de ULV |Eliminación Masiva de Criaderos|
-|  | |Operativos CL, ULV Térmica y IRS en áreas de Alto Riesgo |Operativos CL, ULV Térmica y IRS en áreas de Alto Riesgo |ULV Térmica en Sitios de Concentración|
+| Situación                                        | Anuales              | Primer Semestre                                          | Segundo Semestre                                         | Adicionales                            |
+|---------------|---------------|---------------|---------------|---------------|
+| A\) Sin transmisión ó transmisión no epidémica   | Control de Probables | Operativos CL, ULV Térmica y IRS en áreas de Alto Riesgo | Operativo de CL y ULV Térmica en áreas de Alto Riesgo    | Eliminación Masiva de Criaderos        |
+|                                                  | Hotspots del Vector  |                                                          |                                                          | ULV Térmica en Sitios de Concentración |
+| B\) Transmisión Epidémica en el Primer Trimestre |                      | Operativos o Megaoperativos de ULV                       | Control de Probables                                     | Eliminación Masiva de Criaderos        |
+|                                                  |                      | Operativos CL & ULV Térmica en área de alto Riesgo       | Hotspots del vector                                      | ULV Térmica en Sitios de Concentración |
+| C\) Transmisión Epidémica en el Segundo Semestre | Control de Probables | Operativos CL, ULV Térmica y IRS en áreas de Alto Riesgo | Operativos o Megaoperativos de ULV                       | Eliminación Masiva de Criaderos        |
+|                                                  | Hotspots del Vector  |                                                          | Operativos CL & ULV Térmica en área de alto Riesgo       | ULV Térmica en Sitios de Concentración |
+| D\) Transmisión Epidémica en ambos Semestres     |                      | Operativos o Megaoperativos de ULV                       | Operativos o Megaoperativos de ULV                       | Eliminación Masiva de Criaderos        |
+|                                                  |                      | Operativos CL, ULV Térmica y IRS en áreas de Alto Riesgo | Operativos CL, ULV Térmica y IRS en áreas de Alto Riesgo | ULV Térmica en Sitios de Concentración |
 
 : Situación Epidemiológica de las Localidades Endémicas Prioritarias y Actividades de Control {#tbl-escenarios .striped .hover .center}
 
+### Vigilancia Entomológica
 
-### Vigilancia Entomológica 
+La Organización Mundial de la Salud (2017) en el documento **Respuesta Mundial para el control de vectores 2017–2030** define a la vigilancia entomológica como "la recopilación, el análisis y la interpretación regulares y sistemática de datos entomológicos para la evaluación de riesgos para la salud y para la planificación, implementación, seguimiento y evaluación del control de vectores". La vigilancia entomológica junto con la vigilancia epidemiológica son la materia prima para la toma de desiciones en el programa de prevención y control de las arbovirosis.
 
+La vigilancia entomológica basada en los indicadores larvarios, repetidamente han mostrado inconsistencias en su relación con los casos, la transmisión ó el riesgo de transmisión. Actualmente el programa nacional de prevención y control de las ETVs, recomienda los indicadores larvarios antes y después de la realización de acciones dirigidas a la etapa acuática del vector. En México, el programa tiene implementado un sistema de vigilancia entomológica con ovitrampas en todos los estados (excepto, Ciudad de Mexico y Tlaxcala). La vigilancia entomológica esta basado en un muestreo sistemático y genera bases de datos semanales con resolución espacial a nivel de casa. Adicionalmente, el programa tiene implementado la colecta de colecta de adultos y la vigilancia entomovirológica o colecta de adultos en localides centinelas (Acapulco, Cuernavaca, Veracruz & Tapachula). Las Unidades de Investigación Entomológica y de Bioensayos del CENAPRECE, han generado información sobre la susceptibilidad a insecticidas de la fase acuática y la fase terrestre de *Ae. aegypti* en México (http://www.cenaprece.salud.gob.mx/programas/interior/vectores/descargas/pdf/MonitoreoResistenciaInsecticidas2014.pdf).
 
-La Organización Mundial de la Salud (2017) en el documento **Respuesta Mundial para el control de vectores 2017–2030** define a la vigilancia entomológica como "la recopilación, el análisis y la interpretación regulares y sistemática de datos entomológicos para la evaluación de riesgos para la salud y para la planificación, implementación, seguimiento y evaluación del control de vectores". La vigilancia entomológica junto con la vigilancia epidemiológica son la materia prima para la toma de desiciones en el programa de prevención y control de las arbovirosis. 
+La vigilancia entomológica es parte esencial en el *Manejo Integrado de Aedes* en México y las actividades específicas por temporalidad agregada en los periodos interepidémicos y epidémicos son proporcionados en la @tbl-interpidemic y la tabla @tbl-epidemic. En el MIA se da énfasis en la colecta de adultos al menos en el escenario de Alto Riesgo, la vigilancia entomológica con ovitrampas se continua en toda la localidad con periodicidad semanal, la productividad pupal se recomienda la menos una vez en al area de Alto Riesgo, la encuesta y verificación de los estudios larvarios antes y después del control larvario. Los estudios de resistencia insecticidas son recomendados cuando se implmentan las actividades antivectoriles que se basan en el uso racional y juicioso de insecticidas. En el MIA de México, se recomienda al menos una vez en el área de alto riesgo, y sería ideal diagnosticar la susceptibilidad en toda la localidad con al menos 20 muestras.
 
-La vigilancia entomológica basada en los indicadores larvarios, repetidamente han mostrado inconsistencias en su relación con los casos, la transmisión ó el riesgo de transmisión. Actualmente el programa nacional de prevención y control de las ETVs, recomienda los indicadores larvarios antes y después de la realización de acciones dirigidas a la etapa acuática del vector. En México, el programa tiene implementado un sistema de vigilancia entomológica con ovitrampas en todos los estados (excepto, Ciudad de Mexico y Tlaxcala). La vigilancia entomológica esta basado en un muestreo sistemático y genera bases de datos semanales con resolución espacial a nivel de casa. Adicionalmente, el programa tiene implementado la colecta de colecta de adultos y la vigilancia entomovirológica o colecta de adultos en localides centinelas (Acapulco, Cuernavaca, Veracruz & Tapachula). Las
-Unidades de Investigación Entomológica y de Bioensayos del CENAPRECE, han generado información sobre la susceptibilidad a insecticidas de la fase acuática y la fase terrestre de *Ae. aegypti* en México (http://www.cenaprece.salud.gob.mx/programas/interior/vectores/descargas/pdf/MonitoreoResistenciaInsecticidas2014.pdf). 
-
-La vigilancia entomológica es parte esencial en el *Manejo Integrado de Aedes* en México y las actividades específicas por temporalidad agregada en los periodos interepidémicos y epidémicos son proporcionados en la @tbl-interpidemic y la tabla @tbl-epidemic. En el MIA se da énfasis en la colecta de adultos al menos en el escenario de Alto Riesgo, la vigilancia entomológica con ovitrampas se continua en toda la localidad con periodicidad semanal, la productividad pupal se recomienda la menos una vez en al area de Alto Riesgo, la encuesta y verificación de los estudios larvarios antes y después del control larvario.
-Los estudios de resistencia insecticidas son recomendados cuando se implmentan las actividades antivectoriles que se basan en el uso racional y juicioso de insecticidas. En el MIA de México, se recomienda al menos una vez en el área de alto riesgo, y sería ideal diagnosticar la susceptibilidad  en toda la localidad con al menos 20 muestras.
-
-| Actividad | Bajo | Moderado |Alto |Muy Alto|
-|------|:------:|:------:|:------:|:------:|
-| Colecta de Adultos| | |  |Mensual|
-| Colecta de Huevos| Semanal | Semanal |Semanal|Semanal|
-| Productividad Pupal|     |     ||Una vez|
-| Encuesta-Verificación|    |    ||Antes y Después de CL|
-| Resistencia a Insecticidas|     |     ||Una vez|
+| Actividad                  |  Bajo   | Moderado |  Alto   |       Muy Alto        |
+|----------------------------|:-------:|:--------:|:-------:|:---------------------:|
+| Colecta de Adultos         |         |          |         |        Mensual        |
+| Colecta de Huevos          | Semanal | Semanal  | Semanal |        Semanal        |
+| Productividad Pupal        |         |          |         |        Una vez        |
+| Encuesta-Verificación      |         |          |         | Antes y Después de CL |
+| Resistencia a Insecticidas |         |          |         |        Una vez        |
 
 : Primer semestre en el periodo interepidémico {#tbl-interpidemic .striped .hover}
 
-
-| Actividad | Bajo | Moderado |Alto |Muy Alto|
-|------|:------:|:------:|:------:|:------:|
-| Colecta de Adultos| | |  |Mensual|
-| Colecta de Huevos| Semanal | Semanal |Semanal|Semanal|
-| Productividad Pupal|     |     |||
-| Encuesta-Verificación|    |    ||Antes y Después de CL|
-| Resistencia a Insecticidas|     |     ||Una vez|
+| Actividad                  |  Bajo   | Moderado |  Alto   |       Muy Alto        |
+|----------------------------|:-------:|:--------:|:-------:|:---------------------:|
+| Colecta de Adultos         |         |          |         |        Mensual        |
+| Colecta de Huevos          | Semanal | Semanal  | Semanal |        Semanal        |
+| Productividad Pupal        |         |          |         |                       |
+| Encuesta-Verificación      |         |          |         | Antes y Después de CL |
+| Resistencia a Insecticidas |         |          |         |        Una vez        |
 
 : Primer semestre en el periodo epidémico {#tbl-epidemic .striped .hover}
 
 ## Manuales y guías como apoyo al MIA
 
-El *Manejo Integrado de Aedes* en México se apoya en las guías operativas nacionales del CENAPRECE (https://www.gob.mx/salud/cenaprece/documentos/guias-operativas-de-arbovirosis-2020) e internacionales de la Organización Mundial de la Salud y la Organización Panamericana de la Salud. Los manuales y las guías con sus respectivas direciones electrónicas para su acceso son proporcionadas en la tablas @tbl-manuales. Para la identificación de los escenarios epidemiológicos el Programa Nacional de ETVs e IVAs ha desarollado un curso de análisis espacial del dengue (https://fdzul.github.io/spatial_analysis_dengue_R_2024/) y  un ecosistema en R para
-el análisis del dengue en Mexico llamado **dengueverse** (https://calm-hummingbird-41cb33.netlify.app/talks/dengueverse). En el dengueverse se incluyen los paquetes en R [rgeomex](), [densnve](https://fdzul.github.io/densnv/), [deneggs](https://fdzul.github.io/deneggs/), [denhotspots](https://fdzul.github.io/denhotspots/articles/count_cases_by_polygons.html) & [popmex](https://fdzul.github.io/popmex/)  
+El *Manejo Integrado de Aedes* en México se apoya en las guías operativas nacionales del CENAPRECE (https://www.gob.mx/salud/cenaprece/documentos/guias-operativas-de-arbovirosis-2020) e internacionales de la Organización Mundial de la Salud y la Organización Panamericana de la Salud. Los manuales y las guías con sus respectivas direciones electrónicas para su acceso son proporcionadas en la tablas @tbl-manuales. Para la identificación de los escenarios epidemiológicos el Programa Nacional de ETVs e IVAs ha desarollado un curso de análisis espacial del dengue (https://fdzul.github.io/spatial_analysis_dengue_R_2024/) y un ecosistema en R para el análisis del dengue en Mexico llamado **dengueverse** (https://calm-hummingbird-41cb33.netlify.app/talks/dengueverse). En el dengueverse se incluyen los paquetes en R [rgeomex](), [densnve](https://fdzul.github.io/densnv/), [deneggs](https://fdzul.github.io/deneggs/), [denhotspots](https://fdzul.github.io/denhotspots/articles/count_cases_by_polygons.html) & [popmex](https://fdzul.github.io/popmex/)
 
-| Guia | link | Institución |
-|------|:------:|:------:|
-|Guía Metodológica para las Acciones de Control Larvario| [link](https://www.gob.mx/cms/uploads/attachment/file/604075/Guia_Metodolo_gica_para_las_Acciones_de_Control_Larvario-comprimido.pdf)| CENAPRECE | 
-|Guía Metodológica para la Instalación y Mantenimiento del Insectario| [link](https://www.gob.mx/cms/uploads/attachment/file/598095/Guia_Metodologica_para_la_Instalacion_y_Mantenimiento_del__Insectario_compressed.pdf)| CENAPRECE | 
-|Guía Metodológica para la los Estudios Entomológicos en Fase Larvario y Pupal| [link](https://www.gob.mx/cms/uploads/attachment/file/598094/Guia_Metodologica_para_Estudios_Entomologicos_en_Fase_larvaria_y_Pupal_2020_compres.pdf)| CENAPRECE | 
-|Guía para la determinación de la Susceptibilidad/Resistencia y Eficacia Biológica a Insecticidas| [link](https://www.gob.mx/cms/uploads/attachment/file/598093/Guia_para_la_Determinaci_n_de_la_SusceptibilidadResistencia_y_Eficacia_..._compr.pdf)| CENAPRECE | 
-|Guía Metodológica para la Vigilancia Entomológica con Ovitrampas| [link](https://www.gob.mx/cms/uploads/attachment/file/598092/Guia_Metodologica_para_Vigilancia_Entomologica_con_Ovitrampas_compressed.pdf)| CENAPRECE 
-| 
-|Manual de Organización & Procedimientos de las Unidades de Investigación Entomológica y de Bioensayos (UIEBs)| [link](https://www.gob.mx/cms/uploads/attachment/file/598088/Manual_de_Organizaci_n_y_Procedimientos_de_las_UIEB_s.pdf)| CENAPRECE |
-|Equipo de Protección y Uniformes Recomendades por el CENAPRECE para el Personal del Programa de Prevencipon y Control de Enfermedades Transmitdas por Vector| [link](https://www.gob.mx/cms/uploads/attachment/file/598087/Equipos_de_proteccion_y_uniformes_Recomendados_por_CENAPRECE_2020.pdf)| CENAPRECE |
-|Guía Metodológica para la Nebulización UBV| [link](https://www.gob.mx/cms/uploads/attachment/file/598085/Guia_Metodologica_para_Nebulizacion_Espacial_UBV.pdf)| CENAPRECE |
-|Guía Metodológica para la Nebulización Térmica| [link](https://www.gob.mx/cms/uploads/attachment/file/598085/Guia_Metodologica_para_Nebulizacion_Espacial_UBV.pdf)| CENAPRECE |
-|Guía Metodológica para el Rociado Domiciliario| [link](https://www.gob.mx/cms/uploads/attachment/file/598083/Guia_Metodologica_para_el_Rociado_Domiciliario.pdf)| CENAPRECE |
-|Guía Metodológica para el Mantenimiento y Reparación de Equipo| [link](https://www.gob.mx/cms/uploads/attachment/file/598082/Guia_Metodologica_para_el_mantenimiento_y_reparacion_de_equipos.pdf)|CENAPRECE|
-|Manual para aplicar rociado residual intradomiciliario en zonas urbanas para el control de Aedes aegypti| [link](https://iris.paho.org/handle/10665.2/51638)|OPS|
-|Documento técnico para la implementación de intervenciones basado en escenarios operativos genéricos para el control del Aedes aegypti| [link](https://iris.paho.org/handle/10665.2/51654)|OPS|
-|Operational manual on indoor residual spraying: Control of vectors of malaria, Aedes-borne diseases, Chagas disease, leishmaniases and lymphatic filariasis| [link](https://www.who.int/publications/i/item/9789240083998#:~:text=Indoor%20residual%20spraying%20(IRS)%20involves,to%20transmit%20pathogens%20to%20humans.)|OMS|
-|Respuesta Mundial para el control de vectores 2017–2030| [link](https://www.paho.org/es/documentos/respuesta-mundial-para-control-vectores-2017-2030-0)|OMS|
-|Global arbovirus initiative: preparing for the next pandemic by tackling mosquito-borne viruses with epidemic and pandemic potential| [link](https://www.who.int/publications/i/item/9789240088948)|OMS|
-|Handbook for integrated vector management| [link](https://iris.who.int/handle/10665/44768)|OMS|
-|Global strategic framework for integrated vector management| [link](https://iris.who.int/handle/10665/68624)|OMS|
-|Monitoring and evaluation indicators for integrated vector management| [link](https://iris.who.int/handle/10665/76504)|OMS|
-| Best Practices for Integrated Mosquito Management| [link](https://www.mosquito.org/bmp/)|AMCA|
-|Manual para la identificación de los hotspots en áreas urbanas| [link](https://fdzul.github.io/manual_hotspots/)|AMCA|
+| Guia                                                                                                                                                         |                                                                              link                                                                              | Institución |
+|--------------------|:------------------------:|:------------------------:|
+| Guía Metodológica para las Acciones de Control Larvario                                                                                                      |             [link](https://www.gob.mx/cms/uploads/attachment/file/604075/Guia_Metodolo_gica_para_las_Acciones_de_Control_Larvario-comprimido.pdf)              |  CENAPRECE  |
+| Guía Metodológica para la Instalación y Mantenimiento del Insectario                                                                                         |       [link](https://www.gob.mx/cms/uploads/attachment/file/598095/Guia_Metodologica_para_la_Instalacion_y_Mantenimiento_del__Insectario_compressed.pdf)       |  CENAPRECE  |
+| Guía Metodológica para la los Estudios Entomológicos en Fase Larvario y Pupal                                                                                |     [link](https://www.gob.mx/cms/uploads/attachment/file/598094/Guia_Metodologica_para_Estudios_Entomologicos_en_Fase_larvaria_y_Pupal_2020_compres.pdf)      |  CENAPRECE  |
+| Guía para la determinación de la Susceptibilidad/Resistencia y Eficacia Biológica a Insecticidas                                                             |       [link](https://www.gob.mx/cms/uploads/attachment/file/598093/Guia_para_la_Determinaci_n_de_la_SusceptibilidadResistencia_y_Eficacia_..._compr.pdf)       |  CENAPRECE  |
+| Guía Metodológica para la Vigilancia Entomológica con Ovitrampas                                                                                             |           [link](https://www.gob.mx/cms/uploads/attachment/file/598092/Guia_Metodologica_para_Vigilancia_Entomologica_con_Ovitrampas_compressed.pdf)           |  CENAPRECE  |
+|                                                                                                                                                              |                                                                                                                                                                |             |
+| Manual de Organización & Procedimientos de las Unidades de Investigación Entomológica y de Bioensayos (UIEBs)                                                |                    [link](https://www.gob.mx/cms/uploads/attachment/file/598088/Manual_de_Organizaci_n_y_Procedimientos_de_las_UIEB_s.pdf)                     |  CENAPRECE  |
+| Equipo de Protección y Uniformes Recomendades por el CENAPRECE para el Personal del Programa de Prevencipon y Control de Enfermedades Transmitdas por Vector |              [link](https://www.gob.mx/cms/uploads/attachment/file/598087/Equipos_de_proteccion_y_uniformes_Recomendados_por_CENAPRECE_2020.pdf)               |  CENAPRECE  |
+| Guía Metodológica para la Nebulización UBV                                                                                                                   |                       [link](https://www.gob.mx/cms/uploads/attachment/file/598085/Guia_Metodologica_para_Nebulizacion_Espacial_UBV.pdf)                       |  CENAPRECE  |
+| Guía Metodológica para la Nebulización Térmica                                                                                                               |                       [link](https://www.gob.mx/cms/uploads/attachment/file/598085/Guia_Metodologica_para_Nebulizacion_Espacial_UBV.pdf)                       |  CENAPRECE  |
+| Guía Metodológica para el Rociado Domiciliario                                                                                                               |                        [link](https://www.gob.mx/cms/uploads/attachment/file/598083/Guia_Metodologica_para_el_Rociado_Domiciliario.pdf)                        |  CENAPRECE  |
+| Guía Metodológica para el Mantenimiento y Reparación de Equipo                                                                                               |               [link](https://www.gob.mx/cms/uploads/attachment/file/598082/Guia_Metodologica_para_el_mantenimiento_y_reparacion_de_equipos.pdf)                |  CENAPRECE  |
+| Manual para aplicar rociado residual intradomiciliario en zonas urbanas para el control de Aedes aegypti                                                     |                                                       [link](https://iris.paho.org/handle/10665.2/51638)                                                       |     OPS     |
+| Documento técnico para la implementación de intervenciones basado en escenarios operativos genéricos para el control del Aedes aegypti                       |                                                       [link](https://iris.paho.org/handle/10665.2/51654)                                                       |     OPS     |
+| Operational manual on indoor residual spraying: Control of vectors of malaria, Aedes-borne diseases, Chagas disease, leishmaniases and lymphatic filariasis  | [link](https://www.who.int/publications/i/item/9789240083998#:~:text=Indoor%20residual%20spraying%20(IRS)%20involves,to%20transmit%20pathogens%20to%20humans.) |     OMS     |
+| Respuesta Mundial para el control de vectores 2017–2030                                                                                                      |                                 [link](https://www.paho.org/es/documentos/respuesta-mundial-para-control-vectores-2017-2030-0)                                 |     OMS     |
+| Global arbovirus initiative: preparing for the next pandemic by tackling mosquito-borne viruses with epidemic and pandemic potential                         |                                                 [link](https://www.who.int/publications/i/item/9789240088948)                                                  |     OMS     |
+| Handbook for integrated vector management                                                                                                                    |                                                        [link](https://iris.who.int/handle/10665/44768)                                                         |     OMS     |
+| Global strategic framework for integrated vector management                                                                                                  |                                                        [link](https://iris.who.int/handle/10665/68624)                                                         |     OMS     |
+| Monitoring and evaluation indicators for integrated vector management                                                                                        |                                                        [link](https://iris.who.int/handle/10665/76504)                                                         |     OMS     |
+| Best Practices for Integrated Mosquito Management                                                                                                            |                                                             [link](https://www.mosquito.org/bmp/)                                                              |    AMCA     |
+| Manual para la identificación de los hotspots en áreas urbanas                                                                                               |                                                        [link](https://fdzul.github.io/manual_hotspots/)                                                        |    AMCA     |
 
 : Manuales y Gúias para el MIA {#tbl-manuales .striped .hover}
-
-
 
 ## Conclusión
 
@@ -1026,8 +986,6 @@ En México, el Programa Nacional de Prevención y Control de las Enfermedades Tr
 En función de diferentes situaciones epidemiológicas, se implementan acciones específicas de prevención y control. Desde la reducción de las poblaciones de vectores mediante control larvario y nebulización, hasta la movilización de las comunidades y el monitoreo constante de la resistencia a los insecticidas. El enfoque proactivo se ha vuelto fundamental, evitando brotes y manteniendo la transmisión dentro de niveles manejables.
 
 En resumen, el Manejo Integrado de los Vectores se ha convertido en una herramienta fundamental en la lucha contra las enfermedades transmitidas por vectores en México y en todo el mundo. Su enfoque integral y estratégico, basado en la comprensión profunda de la biología y ecología de los vectores, ha demostrado ser eficaz para reducir la carga de estas enfermedades y proteger la salud de las poblaciones vulnerables.
-
-
 
 ## Referencias
 
